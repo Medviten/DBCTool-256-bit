@@ -1,0 +1,43 @@
+{
+  "file": "FactionTemplate.dbc",
+  "primaryKeys": [
+    "id"
+  ],
+  "fields": [
+    {
+      "name": "id",
+      "type": "uint32"
+    },
+    {
+      "name": "faction",
+      "type": "int32"
+    },
+    {
+      "name": "flags",
+      "type": "int32"
+    },
+    {
+      "name": "faction_group",
+      "type": "int32"
+    },
+    {
+      "name": "friend_group",
+      "type": "int32"
+    },
+    {
+      "name": "enemy_group",
+      "type": "int32"
+    },
+    {
+      "name": "enemies",
+      "type": "int32",
+      "count": 4
+    },
+    {
+      "name": "friends",
+      "type": "int32",
+      "count": 4
+    }
+  ],
+  "tableName": "factiontemplate"
+}

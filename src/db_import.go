@@ -180,20 +180,20 @@ func createTable(db *sql.DB, tableName string, meta *MetaFile) error {
 
             switch field.Type {
             case "int32":
-                columns = append(columns, fmt.Sprintf("`%s` INT", colName))
+                columns = append(columns, fmt.Sprintf("`%s` INT DEFAULT 0", colName))
             case "uint32":
-                columns = append(columns, fmt.Sprintf("`%s` INT UNSIGNED", colName))
+                columns = append(columns, fmt.Sprintf("`%s` INT UNSIGNED DEFAULT 0", colName))
             case "uint8":
-                columns = append(columns, fmt.Sprintf("`%s` TINYINT UNSIGNED", colName))
+                columns = append(columns, fmt.Sprintf("`%s` TINYINT UNSIGNED DEFAULT 0", colName))
             case "float":
-                columns = append(columns, fmt.Sprintf("`%s` DECIMAL(38,16)", colName))
+                columns = append(columns, fmt.Sprintf("`%s` DECIMAL(38,16) DEFAULT 0", colName))
             case "string":
                 columns = append(columns, fmt.Sprintf("`%s` TEXT", colName))
             case "Loc":
                 for i, lang := range locLangs {
                     locCol := fmt.Sprintf("%s_%s", colName, lang)
                     if i == len(locLangs)-1 {
-                        columns = append(columns, fmt.Sprintf("`%s` INT UNSIGNED", locCol))
+                        columns = append(columns, fmt.Sprintf("`%s` INT UNSIGNED DEFAULT 0", locCol))
                     } else {
                         columns = append(columns, fmt.Sprintf("`%s` TEXT", locCol))
                     }

@@ -1,0 +1,111 @@
+{
+  "file": "SoundEntriesAdvanced.dbc",
+  "primaryKeys": [
+    "id"
+  ],
+  "sortOrder": [
+    {
+      "name": "id",
+      "direction": "ASC"
+    }
+  ],
+  "fields": [
+    {
+      "name": "id",
+      "type": "uint32"
+    },
+    {
+      "name": "sound_entry_id",
+      "type": "uint32"
+    },
+    {
+      "name": "inner_radius_2d",
+      "type": "float"
+    },
+    {
+      "name": "time_a",
+      "type": "uint32"
+    },
+    {
+      "name": "time_b",
+      "type": "uint32"
+    },
+    {
+      "name": "time_c",
+      "type": "uint32"
+    },
+    {
+      "name": "time_d",
+      "type": "uint32"
+    },
+    {
+      "name": "random_offset_range",
+      "type": "uint32"
+    },
+    {
+      "name": "usage",
+      "type": "uint32"
+    },
+    {
+      "name": "time_interval_min",
+      "type": "uint32"
+    },
+    {
+      "name": "time_interval_max",
+      "type": "uint32"
+    },
+    {
+      "name": "volume_slider_category",
+      "type": "uint32"
+    },
+    {
+      "name": "duck_to_sfx",
+      "type": "float"
+    },
+    {
+      "name": "duck_to_music",
+      "type": "float"
+    },
+    {
+      "name": "duck_to_ambience",
+      "type": "float"
+    },
+    {
+      "name": "inner_radius_of_influence",
+      "type": "float"
+    },
+    {
+      "name": "outer_radius_of_influence",
+      "type": "float"
+    },
+    {
+      "name": "time_to_duck",
+      "type": "uint32"
+    },
+    {
+      "name": "time_to_unduck",
+      "type": "uint32"
+    },
+    {
+      "name": "inside_angle",
+      "type": "float"
+    },
+    {
+      "name": "outside_angle",
+      "type": "float"
+    },
+    {
+      "name": "outside_volume",
+      "type": "float"
+    },
+    {
+      "name": "outer_radius_2d",
+      "type": "float"
+    },
+    {
+      "name": "name",
+      "type": "string"
+    }
+  ],
+  "tableName": "soundentriesadvanced"
+}

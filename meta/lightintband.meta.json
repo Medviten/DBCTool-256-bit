@@ -1,0 +1,27 @@
+{
+  "file": "LightIntBand.dbc",
+  "primaryKeys": [
+    "id"
+  ],
+  "fields": [
+    {
+      "name": "id",
+      "type": "uint32"
+    },
+    {
+      "name": "num_entries",
+      "type": "int32"
+    },
+    {
+      "name": "time_value",
+      "type": "uint32",
+      "count": 16
+    },
+    {
+      "name": "colour_value",
+      "type": "uint32",
+      "count": 16
+    }
+  ],
+  "tableName": "lightintband"
+}

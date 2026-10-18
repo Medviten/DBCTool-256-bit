@@ -1,0 +1,21 @@
+{
+  "file": "Movie.dbc",
+  "primaryKeys": [
+    "id"
+  ],
+  "fields": [
+    {
+      "name": "id",
+      "type": "uint32"
+    },
+    {
+      "name": "movie_path",
+      "type": "string"
+    },
+    {
+      "name": "volume",
+      "type": "int32"
+    }
+  ],
+  "tableName": "movie"
+}

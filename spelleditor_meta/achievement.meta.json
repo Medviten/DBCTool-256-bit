@@ -1,0 +1,263 @@
+{
+  "file": "Achievement.dbc",
+  "tableName": "achievement",
+  "primaryKeys": [
+    "id"
+  ],
+  "sortOrder": [
+    {
+      "name": "id",
+      "direction": "ASC"
+    }
+  ],
+  "fields": [
+    {
+      "name": "id",
+      "type": "uint32"
+    },
+    {
+      "name": "required_faction",
+      "type": "int32"
+    },
+    {
+      "name": "map_id",
+      "type": "int32"
+    },
+    {
+      "name": "parent_achievement",
+      "type": "uint32"
+    },
+    {
+      "name": "name_1",
+      "type": "string"
+    },
+    {
+      "name": "name_2",
+      "type": "string"
+    },
+    {
+      "name": "name_3",
+      "type": "string"
+    },
+    {
+      "name": "name_4",
+      "type": "string"
+    },
+    {
+      "name": "name_5",
+      "type": "string"
+    },
+    {
+      "name": "name_6",
+      "type": "string"
+    },
+    {
+      "name": "name_7",
+      "type": "string"
+    },
+    {
+      "name": "name_8",
+      "type": "string"
+    },
+    {
+      "name": "name_9",
+      "type": "string"
+    },
+    {
+      "name": "name_10",
+      "type": "string"
+    },
+    {
+      "name": "name_11",
+      "type": "string"
+    },
+    {
+      "name": "name_12",
+      "type": "string"
+    },
+    {
+      "name": "name_13",
+      "type": "string"
+    },
+    {
+      "name": "name_14",
+      "type": "string"
+    },
+    {
+      "name": "name_15",
+      "type": "string"
+    },
+    {
+      "name": "name_16",
+      "type": "string"
+    },
+    {
+      "name": "name_flags",
+      "type": "uint32"
+    },
+    {
+      "name": "description_1",
+      "type": "string"
+    },
+    {
+      "name": "description_2",
+      "type": "string"
+    },
+    {
+      "name": "description_3",
+      "type": "string"
+    },
+    {
+      "name": "description_4",
+      "type": "string"
+    },
+    {
+      "name": "description_5",
+      "type": "string"
+    },
+    {
+      "name": "description_6",
+      "type": "string"
+    },
+    {
+      "name": "description_7",
+      "type": "string"
+    },
+    {
+      "name": "description_8",
+      "type": "string"
+    },
+    {
+      "name": "description_9",
+      "type": "string"
+    },
+    {
+      "name": "description_10",
+      "type": "string"
+    },
+    {
+      "name": "description_11",
+      "type": "string"
+    },
+    {
+      "name": "description_12",
+      "type": "string"
+    },
+    {
+      "name": "description_13",
+      "type": "string"
+    },
+    {
+      "name": "description_14",
+      "type": "string"
+    },
+    {
+      "name": "description_15",
+      "type": "string"
+    },
+    {
+      "name": "description_16",
+      "type": "string"
+    },
+    {
+      "name": "description_flags",
+      "type": "uint32"
+    },
+    {
+      "name": "category_id",
+      "type": "uint32"
+    },
+    {
+      "name": "points",
+      "type": "uint32"
+    },
+    {
+      "name": "order_in_category",
+      "type": "uint32"
+    },
+    {
+      "name": "flags",
+      "type": "uint32"
+    },
+    {
+      "name": "icon",
+      "type": "uint32"
+    },
+    {
+      "name": "title_reward_1",
+      "type": "string"
+    },
+    {
+      "name": "title_reward_2",
+      "type": "string"
+    },
+    {
+      "name": "title_reward_3",
+      "type": "string"
+    },
+    {
+      "name": "title_reward_4",
+      "type": "string"
+    },
+    {
+      "name": "title_reward_5",
+      "type": "string"
+    },
+    {
+      "name": "title_reward_6",
+      "type": "string"
+    },
+    {
+      "name": "title_reward_7",
+      "type": "string"
+    },
+    {
+      "name": "title_reward_8",
+      "type": "string"
+    },
+    {
+      "name": "title_reward_9",
+      "type": "string"
+    },
+    {
+      "name": "title_reward_10",
+      "type": "string"
+    },
+    {
+      "name": "title_reward_11",
+      "type": "string"
+    },
+    {
+      "name": "title_reward_12",
+      "type": "string"
+    },
+    {
+      "name": "title_reward_13",
+      "type": "string"
+    },
+    {
+      "name": "title_reward_14",
+      "type": "string"
+    },
+    {
+      "name": "title_reward_15",
+      "type": "string"
+    },
+    {
+      "name": "title_reward_16",
+      "type": "string"
+    },
+    {
+      "name": "title_reward_flags",
+      "type": "uint32"
+    },
+    {
+      "name": "count",
+      "type": "uint32"
+    },
+    {
+      "name": "ref_achievement",
+      "type": "uint32"
+    }
+  ]
+}

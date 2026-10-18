@@ -1,0 +1,22 @@
+{
+  "file": "OverrideSpellData.dbc",
+  "primaryKeys": [
+    "id"
+  ],
+  "fields": [
+    {
+      "name": "id",
+      "type": "uint32"
+    },
+    {
+      "name": "spellid",
+      "type": "uint32",
+      "count": 10
+    },
+    {
+      "name": "flags",
+      "type": "uint32"
+    }
+  ],
+  "tableName": "overridespelldata"
+}

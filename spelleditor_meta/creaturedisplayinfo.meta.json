@@ -1,26 +1,79 @@
 {
   "file": "CreatureDisplayInfo.dbc",
   "tableName": "creaturedisplayinfo",
-  "primaryKeys": ["ID"],
+  "primaryKeys": [
+    "id"
+  ],
   "sortOrder": [
-    {"name": "ID", "direction": "ASC"}
+    {
+      "name": "id",
+      "direction": "ASC"
+    }
   ],
   "fields": [
-    {"name": "ID", "type": "uint32"},
-    {"name": "ModelID", "type": "uint32"},
-    {"name": "SoundID", "type": "uint32"},
-    {"name": "ExtendedDisplayInfoID", "type": "uint32"},
-    {"name": "CreatureModelScale", "type": "float"},
-    {"name": "CreatureModelAlpha", "type": "uint32"},
-    {"name": "TextureVariation_1", "type": "string"},
-    {"name": "TextureVariation_2", "type": "string"},
-    {"name": "TextureVariation_3", "type": "string"},
-    {"name": "PortraitTextureName", "type": "string"},
-    {"name": "BloodLevel", "type": "int32"},
-    {"name": "BloodID", "type": "uint32"},
-    {"name": "NPCSoundID", "type": "uint32"},
-    {"name": "ParticleColorID", "type": "uint32"},
-    {"name": "CreatureGeosetData", "type": "uint32"},
-    {"name": "ObjectEffectPackageID", "type": "uint32"}
+    {
+      "name": "id",
+      "type": "uint32"
+    },
+    {
+      "name": "model_id",
+      "type": "uint32"
+    },
+    {
+      "name": "sound_id",
+      "type": "uint32"
+    },
+    {
+      "name": "extended_display_info_id",
+      "type": "uint32"
+    },
+    {
+      "name": "creature_model_scale",
+      "type": "float"
+    },
+    {
+      "name": "creature_model_alpha",
+      "type": "uint32"
+    },
+    {
+      "name": "texture_variation_1",
+      "type": "string"
+    },
+    {
+      "name": "texture_variation_2",
+      "type": "string"
+    },
+    {
+      "name": "texture_variation_3",
+      "type": "string"
+    },
+    {
+      "name": "portrait_texture_name",
+      "type": "string"
+    },
+    {
+      "name": "blood_level",
+      "type": "int32"
+    },
+    {
+      "name": "blood_id",
+      "type": "uint32"
+    },
+    {
+      "name": "npc_sound_id",
+      "type": "uint32"
+    },
+    {
+      "name": "particle_color_id",
+      "type": "uint32"
+    },
+    {
+      "name": "creature_geoset_data",
+      "type": "uint32"
+    },
+    {
+      "name": "object_effect_package_id",
+      "type": "uint32"
+    }
   ]
 }

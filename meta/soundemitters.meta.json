@@ -1,0 +1,55 @@
+{
+  "file": "SoundEmitters.dbc",
+  "primaryKeys": [
+    "id"
+  ],
+  "sortOrder": [
+    {
+      "name": "id",
+      "direction": "ASC"
+    }
+  ],
+  "fields": [
+    {
+      "name": "id",
+      "type": "uint32"
+    },
+    {
+      "name": "position_x",
+      "type": "float"
+    },
+    {
+      "name": "position_y",
+      "type": "float"
+    },
+    {
+      "name": "position_z",
+      "type": "float"
+    },
+    {
+      "name": "direction_x",
+      "type": "float"
+    },
+    {
+      "name": "direction_y",
+      "type": "float"
+    },
+    {
+      "name": "direction_z",
+      "type": "float"
+    },
+    {
+      "name": "sound_entries_id",
+      "type": "uint32"
+    },
+    {
+      "name": "map_id",
+      "type": "uint32"
+    },
+    {
+      "name": "name",
+      "type": "string"
+    }
+  ],
+  "tableName": "soundemitters"
+}

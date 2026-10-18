@@ -1,0 +1,161 @@
+{
+  "file": "SpellItemEnchantment.dbc",
+  "tableName": "spellitemenchantment",
+  "primaryKeys": [
+    "id"
+  ],
+  "fields": [
+    {
+      "name": "id",
+      "type": "uint32"
+    },
+    {
+      "name": "charges",
+      "type": "uint32"
+    },
+    {
+      "name": "spell_dispel_type_1",
+      "type": "uint32"
+    },
+    {
+      "name": "spell_dispel_type_2",
+      "type": "uint32"
+    },
+    {
+      "name": "spell_dispel_type_3",
+      "type": "uint32"
+    },
+    {
+      "name": "min_amount_1",
+      "type": "uint32"
+    },
+    {
+      "name": "min_amount_2",
+      "type": "uint32"
+    },
+    {
+      "name": "min_amount_3",
+      "type": "uint32"
+    },
+    {
+      "name": "max_amount_1",
+      "type": "uint32"
+    },
+    {
+      "name": "max_amount_2",
+      "type": "uint32"
+    },
+    {
+      "name": "max_amount_3",
+      "type": "uint32"
+    },
+    {
+      "name": "object_id_1",
+      "type": "uint32"
+    },
+    {
+      "name": "object_id_2",
+      "type": "uint32"
+    },
+    {
+      "name": "object_id_3",
+      "type": "uint32"
+    },
+    {
+      "name": "s_ref_name_0",
+      "type": "string"
+    },
+    {
+      "name": "s_ref_name_1",
+      "type": "string"
+    },
+    {
+      "name": "s_ref_name_2",
+      "type": "string"
+    },
+    {
+      "name": "s_ref_name_3",
+      "type": "string"
+    },
+    {
+      "name": "s_ref_name_4",
+      "type": "string"
+    },
+    {
+      "name": "s_ref_name_5",
+      "type": "string"
+    },
+    {
+      "name": "s_ref_name_6",
+      "type": "string"
+    },
+    {
+      "name": "s_ref_name_7",
+      "type": "string"
+    },
+    {
+      "name": "s_ref_name_8",
+      "type": "string"
+    },
+    {
+      "name": "s_ref_name_9",
+      "type": "string"
+    },
+    {
+      "name": "s_ref_name_10",
+      "type": "string"
+    },
+    {
+      "name": "s_ref_name_11",
+      "type": "string"
+    },
+    {
+      "name": "s_ref_name_12",
+      "type": "string"
+    },
+    {
+      "name": "s_ref_name_13",
+      "type": "string"
+    },
+    {
+      "name": "s_ref_name_14",
+      "type": "string"
+    },
+    {
+      "name": "s_ref_name_15",
+      "type": "string"
+    },
+    {
+      "name": "s_ref_name_flags",
+      "type": "uint32"
+    },
+    {
+      "name": "item_visuals",
+      "type": "uint32"
+    },
+    {
+      "name": "flags",
+      "type": "uint32"
+    },
+    {
+      "name": "item_cache",
+      "type": "uint32"
+    },
+    {
+      "name": "spell_item_enchantment_condition",
+      "type": "uint32"
+    },
+    {
+      "name": "skill_line",
+      "type": "uint32"
+    },
+    {
+      "name": "skill_level",
+      "type": "uint32"
+    },
+    {
+      "name": "required_level",
+      "type": "uint32"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "file": "Stationery.dbc",
+  "tableName": "stationery",
+  "primaryKeys": [
+    "id"
+  ],
+  "fields": [
+    {
+      "name": "id",
+      "type": "uint32"
+    },
+    {
+      "name": "item_id",
+      "type": "uint32"
+    },
+    {
+      "name": "texture",
+      "type": "string"
+    },
+    {
+      "name": "flags",
+      "type": "uint32"
+    }
+  ]
+}

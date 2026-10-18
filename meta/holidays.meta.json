@@ -1,0 +1,60 @@
+{
+  "file": "Holidays.dbc",
+  "primaryKeys": [
+    "id"
+  ],
+  "fields": [
+    {
+      "name": "id",
+      "type": "uint32"
+    },
+    {
+      "name": "duration",
+      "type": "int32",
+      "count": 10
+    },
+    {
+      "name": "event_date",
+      "type": "int32",
+      "count": 26
+    },
+    {
+      "name": "region",
+      "type": "int32"
+    },
+    {
+      "name": "looping",
+      "type": "int32"
+    },
+    {
+      "name": "calendar_flags",
+      "type": "int32",
+      "count": 10
+    },
+    {
+      "name": "event_calendar_name",
+      "type": "uint32"
+    },
+    {
+      "name": "event_calendar_description",
+      "type": "uint32"
+    },
+    {
+      "name": "event_calendar_overlay",
+      "type": "string"
+    },
+    {
+      "name": "priority",
+      "type": "int32"
+    },
+    {
+      "name": "event_scheduler_type",
+      "type": "int32"
+    },
+    {
+      "name": "event_flags",
+      "type": "int32"
+    }
+  ],
+  "tableName": "holidays"
+}

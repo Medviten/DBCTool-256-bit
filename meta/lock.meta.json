@@ -1,0 +1,33 @@
+{
+  "file": "Lock.dbc",
+  "primaryKeys": [
+    "id"
+  ],
+  "fields": [
+    {
+      "name": "id",
+      "type": "uint32"
+    },
+    {
+      "name": "type",
+      "type": "uint32",
+      "count": 8
+    },
+    {
+      "name": "index",
+      "type": "uint32",
+      "count": 8
+    },
+    {
+      "name": "skill",
+      "type": "uint32",
+      "count": 8
+    },
+    {
+      "name": "action",
+      "type": "uint32",
+      "count": 8
+    }
+  ],
+  "tableName": "lock"
+}

@@ -1,0 +1,50 @@
+{
+  "file": "GameObjectDisplayInfo.dbc",
+  "primaryKeys": [
+    "id"
+  ],
+  "fields": [
+    {
+      "name": "id",
+      "type": "uint32"
+    },
+    {
+      "name": "model_name",
+      "type": "string"
+    },
+    {
+      "name": "sound",
+      "type": "uint32",
+      "count": 10
+    },
+    {
+      "name": "geo_box_min_x",
+      "type": "float"
+    },
+    {
+      "name": "geo_box_min_y",
+      "type": "float"
+    },
+    {
+      "name": "geo_box_min_z",
+      "type": "float"
+    },
+    {
+      "name": "geo_box_max_x",
+      "type": "float"
+    },
+    {
+      "name": "geo_box_max_y",
+      "type": "float"
+    },
+    {
+      "name": "geo_box_max_z",
+      "type": "float"
+    },
+    {
+      "name": "object_effect_package_id",
+      "type": "uint32"
+    }
+  ],
+  "tableName": "gameobjectdisplayinfo"
+}

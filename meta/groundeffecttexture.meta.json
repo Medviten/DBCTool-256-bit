@@ -1,0 +1,37 @@
+{
+  "file": "GroundEffectTexture.dbc",
+  "primaryKeys": [
+    "id"
+  ],
+  "sortOrder": [
+    {
+      "name": "id",
+      "direction": "ASC"
+    }
+  ],
+  "fields": [
+    {
+      "name": "id",
+      "type": "uint32"
+    },
+    {
+      "name": "doodad_id",
+      "type": "uint32",
+      "count": 4
+    },
+    {
+      "name": "doodad_weight",
+      "type": "int32",
+      "count": 4
+    },
+    {
+      "name": "density",
+      "type": "uint32"
+    },
+    {
+      "name": "terrain_type_id",
+      "type": "uint32"
+    }
+  ],
+  "tableName": "groundeffecttexture"
+}

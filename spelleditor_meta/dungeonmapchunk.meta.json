@@ -1,0 +1,35 @@
+{
+  "file": "DungeonMapChunk.dbc",
+  "tableName": "dungeonmapchunk",
+  "primaryKeys": [
+    "id"
+  ],
+  "sortOrder": [
+    {
+      "name": "id",
+      "direction": "ASC"
+    }
+  ],
+  "fields": [
+    {
+      "name": "id",
+      "type": "uint32"
+    },
+    {
+      "name": "map_id",
+      "type": "uint32"
+    },
+    {
+      "name": "wmo_group_id",
+      "type": "uint32"
+    },
+    {
+      "name": "dungeon_map_id",
+      "type": "uint32"
+    },
+    {
+      "name": "min_z",
+      "type": "float"
+    }
+  ]
+}

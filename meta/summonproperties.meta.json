@@ -1,0 +1,39 @@
+{
+  "file": "SummonProperties.dbc",
+  "primaryKeys": [
+    "id"
+  ],
+  "sortOrder": [
+    {
+      "name": "id",
+      "direction": "ASC"
+    }
+  ],
+  "fields": [
+    {
+      "name": "id",
+      "type": "uint32"
+    },
+    {
+      "name": "control",
+      "type": "uint32"
+    },
+    {
+      "name": "faction",
+      "type": "uint32"
+    },
+    {
+      "name": "title",
+      "type": "uint32"
+    },
+    {
+      "name": "slot",
+      "type": "uint32"
+    },
+    {
+      "name": "flags",
+      "type": "uint32"
+    }
+  ],
+  "tableName": "summonproperties"
+}

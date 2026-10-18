@@ -1,25 +1,75 @@
 {
   "file": "SpellMissile.dbc",
   "tableName": "spellmissile",
-  "primaryKeys": ["ID"],
+  "primaryKeys": [
+    "id"
+  ],
   "sortOrder": [
-    {"name": "ID", "direction": "ASC"}
+    {
+      "name": "id",
+      "direction": "ASC"
+    }
   ],
   "fields": [
-    {"name": "ID", "type": "uint32"},
-    {"name": "flags", "type": "uint32"},
-    {"name": "defaultPitchMin", "type": "float"},
-    {"name": "defaultPitchMax", "type": "float"},
-    {"name": "defaultSpeedMin", "type": "float"},
-    {"name": "defaultSpeedMax", "type": "float"},
-    {"name": "randomizeFacingMin", "type": "float"},
-    {"name": "randomizeFacingMax", "type": "float"},
-    {"name": "randomizePitchMin", "type": "float"},
-    {"name": "randomizePitchMax", "type": "float"},
-    {"name": "randomizeSpeedMin", "type": "float"},
-    {"name": "randomizeSpeedMax", "type": "float"},
-    {"name": "gravity", "type": "float"},
-    {"name": "maxDuration", "type": "float"},
-    {"name": "collisionRadius", "type": "float"}
+    {
+      "name": "id",
+      "type": "uint32"
+    },
+    {
+      "name": "flags",
+      "type": "uint32"
+    },
+    {
+      "name": "default_pitch_min",
+      "type": "float"
+    },
+    {
+      "name": "default_pitch_max",
+      "type": "float"
+    },
+    {
+      "name": "default_speed_min",
+      "type": "float"
+    },
+    {
+      "name": "default_speed_max",
+      "type": "float"
+    },
+    {
+      "name": "randomize_facing_min",
+      "type": "float"
+    },
+    {
+      "name": "randomize_facing_max",
+      "type": "float"
+    },
+    {
+      "name": "randomize_pitch_min",
+      "type": "float"
+    },
+    {
+      "name": "randomize_pitch_max",
+      "type": "float"
+    },
+    {
+      "name": "randomize_speed_min",
+      "type": "float"
+    },
+    {
+      "name": "randomize_speed_max",
+      "type": "float"
+    },
+    {
+      "name": "gravity",
+      "type": "float"
+    },
+    {
+      "name": "max_duration",
+      "type": "float"
+    },
+    {
+      "name": "collision_radius",
+      "type": "float"
+    }
   ]
 }

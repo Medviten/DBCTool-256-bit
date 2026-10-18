@@ -1,0 +1,43 @@
+{
+  "file": "CharacterFacialHairStyles.dbc",
+  "tableName": "characterfacialhairstyles",
+  "primaryKeys": [
+    "race_id",
+    "sex_id",
+    "variation_id"
+  ],
+  "fields": [
+    {
+      "name": "race_id",
+      "type": "uint32"
+    },
+    {
+      "name": "sex_id",
+      "type": "uint32"
+    },
+    {
+      "name": "variation_id",
+      "type": "uint32"
+    },
+    {
+      "name": "geoset_1",
+      "type": "uint32"
+    },
+    {
+      "name": "geoset_2",
+      "type": "uint32"
+    },
+    {
+      "name": "geoset_3",
+      "type": "uint32"
+    },
+    {
+      "name": "geoset_4",
+      "type": "uint32"
+    },
+    {
+      "name": "geoset_5",
+      "type": "uint32"
+    }
+  ]
+}

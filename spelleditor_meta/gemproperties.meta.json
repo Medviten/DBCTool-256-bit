@@ -1,0 +1,29 @@
+{
+  "file": "GemProperties.dbc",
+  "tableName": "gemproperties",
+  "primaryKeys": [
+    "id"
+  ],
+  "fields": [
+    {
+      "name": "id",
+      "type": "uint32"
+    },
+    {
+      "name": "spell_item_enchantment_ref",
+      "type": "uint32"
+    },
+    {
+      "name": "max_count_inv",
+      "type": "uint32"
+    },
+    {
+      "name": "max_count_item",
+      "type": "uint32"
+    },
+    {
+      "name": "gem_type",
+      "type": "uint32"
+    }
+  ]
+}

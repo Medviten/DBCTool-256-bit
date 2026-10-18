@@ -1,0 +1,21 @@
+{
+  "file": "MovieVariation.dbc",
+  "primaryKeys": [
+    "id"
+  ],
+  "fields": [
+    {
+      "name": "id",
+      "type": "uint32"
+    },
+    {
+      "name": "movie_id",
+      "type": "uint32"
+    },
+    {
+      "name": "file_data_id",
+      "type": "uint32"
+    }
+  ],
+  "tableName": "movievariation"
+}

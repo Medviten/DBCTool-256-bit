@@ -1,0 +1,55 @@
+{
+  "file": "CharSections.dbc",
+  "tableName": "charsections",
+  "primaryKeys": [
+    "id"
+  ],
+  "sortOrder": [
+    {
+      "name": "id",
+      "direction": "ASC"
+    }
+  ],
+  "fields": [
+    {
+      "name": "id",
+      "type": "uint32"
+    },
+    {
+      "name": "race_id",
+      "type": "uint32"
+    },
+    {
+      "name": "sex_id",
+      "type": "uint32"
+    },
+    {
+      "name": "base_section",
+      "type": "uint32"
+    },
+    {
+      "name": "texture_name_1",
+      "type": "string"
+    },
+    {
+      "name": "texture_name_2",
+      "type": "string"
+    },
+    {
+      "name": "texture_name_3",
+      "type": "string"
+    },
+    {
+      "name": "flags",
+      "type": "uint32"
+    },
+    {
+      "name": "variation_index",
+      "type": "uint32"
+    },
+    {
+      "name": "color_index",
+      "type": "uint32"
+    }
+  ]
+}

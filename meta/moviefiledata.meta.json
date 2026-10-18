@@ -1,0 +1,17 @@
+{
+  "file": "MovieFileData.dbc",
+  "primaryKeys": [
+    "id"
+  ],
+  "fields": [
+    {
+      "name": "id",
+      "type": "uint32"
+    },
+    {
+      "name": "resolution",
+      "type": "uint32"
+    }
+  ],
+  "tableName": "moviefiledata"
+}

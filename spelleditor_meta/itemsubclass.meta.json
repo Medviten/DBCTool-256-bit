@@ -1,57 +1,197 @@
 {
   "file": "ItemSubClass.dbc",
   "tableName": "itemsubclass",
-  "primaryKeys": ["auto_id"],
+  "primaryKeys": [
+    "auto_id"
+  ],
   "uniqueKeys": [
-    ["Class", "subClass"]
+    [
+      "class",
+      "sub_class"
+    ]
   ],
   "sortOrder": [
-    {"name": "auto_id", "direction": "ASC"}
+    {
+      "name": "auto_id",
+      "direction": "ASC"
+    }
   ],
   "fields": [
-    {"name": "Class", "type": "uint32"},
-    {"name": "subClass", "type": "uint32"},
-    {"name": "prerequisiteProficiency", "type": "int32"},
-    {"name": "postrequisiteProficiency", "type": "int32"},
-    {"name": "flags", "type": "uint32"},
-    {"name": "displayFlags", "type": "uint32"},
-    {"name": "weaponParrySeq", "type": "uint32"},
-    {"name": "weaponReadySeq", "type": "uint32"},
-    {"name": "weaponAttackSeq", "type": "uint32"},
-    {"name": "WeaponSwingSize", "type": "uint32"},
-    {"name": "displayName1", "type": "string"},
-    {"name": "displayName2", "type": "string"},
-    {"name": "displayName3", "type": "string"},
-    {"name": "displayName4", "type": "string"},
-    {"name": "displayName5", "type": "string"},
-    {"name": "displayName6", "type": "string"},
-    {"name": "displayName7", "type": "string"},
-    {"name": "displayName8", "type": "string"},
-    {"name": "displayName9", "type": "string"},
-    {"name": "displayName10", "type": "string"},
-    {"name": "displayName11", "type": "string"},
-    {"name": "displayName12", "type": "string"},
-    {"name": "displayName13", "type": "string"},
-    {"name": "displayName14", "type": "string"},
-    {"name": "displayName15", "type": "string"},
-    {"name": "displayName16", "type": "string"},
-    {"name": "displayNameFlag", "type": "uint32"},
-    {"name": "verboseName1", "type": "string"},
-    {"name": "verboseName2", "type": "string"},
-    {"name": "verboseName3", "type": "string"},
-    {"name": "verboseName4", "type": "string"},
-    {"name": "verboseName5", "type": "string"},
-    {"name": "verboseName6", "type": "string"},
-    {"name": "verboseName7", "type": "string"},
-    {"name": "verboseName8", "type": "string"},
-    {"name": "verboseName9", "type": "string"},
-    {"name": "verboseName10", "type": "string"},
-    {"name": "verboseName11", "type": "string"},
-    {"name": "verboseName12", "type": "string"},
-    {"name": "verboseName13", "type": "string"},
-    {"name": "verboseName14", "type": "string"},
-    {"name": "verboseName15", "type": "string"},
-    {"name": "verboseName16", "type": "string"},
-    {"name": "verboseNameFlag", "type": "uint32"}
+    {
+      "name": "class",
+      "type": "uint32"
+    },
+    {
+      "name": "sub_class",
+      "type": "uint32"
+    },
+    {
+      "name": "prerequisite_proficiency",
+      "type": "int32"
+    },
+    {
+      "name": "postrequisite_proficiency",
+      "type": "int32"
+    },
+    {
+      "name": "flags",
+      "type": "uint32"
+    },
+    {
+      "name": "display_flags",
+      "type": "uint32"
+    },
+    {
+      "name": "weapon_parry_seq",
+      "type": "uint32"
+    },
+    {
+      "name": "weapon_ready_seq",
+      "type": "uint32"
+    },
+    {
+      "name": "weapon_attack_seq",
+      "type": "uint32"
+    },
+    {
+      "name": "weapon_swing_size",
+      "type": "uint32"
+    },
+    {
+      "name": "display_name_1",
+      "type": "string"
+    },
+    {
+      "name": "display_name_2",
+      "type": "string"
+    },
+    {
+      "name": "display_name_3",
+      "type": "string"
+    },
+    {
+      "name": "display_name_4",
+      "type": "string"
+    },
+    {
+      "name": "display_name_5",
+      "type": "string"
+    },
+    {
+      "name": "display_name_6",
+      "type": "string"
+    },
+    {
+      "name": "display_name_7",
+      "type": "string"
+    },
+    {
+      "name": "display_name_8",
+      "type": "string"
+    },
+    {
+      "name": "display_name_9",
+      "type": "string"
+    },
+    {
+      "name": "display_name_10",
+      "type": "string"
+    },
+    {
+      "name": "display_name_11",
+      "type": "string"
+    },
+    {
+      "name": "display_name_12",
+      "type": "string"
+    },
+    {
+      "name": "display_name_13",
+      "type": "string"
+    },
+    {
+      "name": "display_name_14",
+      "type": "string"
+    },
+    {
+      "name": "display_name_15",
+      "type": "string"
+    },
+    {
+      "name": "display_name_16",
+      "type": "string"
+    },
+    {
+      "name": "display_name_flag",
+      "type": "uint32"
+    },
+    {
+      "name": "verbose_name_1",
+      "type": "string"
+    },
+    {
+      "name": "verbose_name_2",
+      "type": "string"
+    },
+    {
+      "name": "verbose_name_3",
+      "type": "string"
+    },
+    {
+      "name": "verbose_name_4",
+      "type": "string"
+    },
+    {
+      "name": "verbose_name_5",
+      "type": "string"
+    },
+    {
+      "name": "verbose_name_6",
+      "type": "string"
+    },
+    {
+      "name": "verbose_name_7",
+      "type": "string"
+    },
+    {
+      "name": "verbose_name_8",
+      "type": "string"
+    },
+    {
+      "name": "verbose_name_9",
+      "type": "string"
+    },
+    {
+      "name": "verbose_name_10",
+      "type": "string"
+    },
+    {
+      "name": "verbose_name_11",
+      "type": "string"
+    },
+    {
+      "name": "verbose_name_12",
+      "type": "string"
+    },
+    {
+      "name": "verbose_name_13",
+      "type": "string"
+    },
+    {
+      "name": "verbose_name_14",
+      "type": "string"
+    },
+    {
+      "name": "verbose_name_15",
+      "type": "string"
+    },
+    {
+      "name": "verbose_name_16",
+      "type": "string"
+    },
+    {
+      "name": "verbose_name_flag",
+      "type": "uint32"
+    }
   ]
 }

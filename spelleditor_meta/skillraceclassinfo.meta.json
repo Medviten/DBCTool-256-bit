@@ -1,0 +1,47 @@
+{
+  "file": "SkillRaceClassInfo.dbc",
+  "tableName": "skillraceclassinfo",
+  "primaryKeys": [
+    "id"
+  ],
+  "sortOrder": [
+    {
+      "name": "id",
+      "direction": "ASC"
+    }
+  ],
+  "fields": [
+    {
+      "name": "id",
+      "type": "uint32"
+    },
+    {
+      "name": "skill_line_dbc_record",
+      "type": "uint32"
+    },
+    {
+      "name": "race_mask",
+      "type": "uint32"
+    },
+    {
+      "name": "class_mask",
+      "type": "uint32"
+    },
+    {
+      "name": "flags",
+      "type": "uint32"
+    },
+    {
+      "name": "min_level",
+      "type": "uint32"
+    },
+    {
+      "name": "skill_tier_id",
+      "type": "uint32"
+    },
+    {
+      "name": "skill_cost_index",
+      "type": "uint32"
+    }
+  ]
+}

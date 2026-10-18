@@ -1,0 +1,25 @@
+{
+  "file": "FactionGroup.dbc",
+  "primaryKeys": [
+    "id"
+  ],
+  "fields": [
+    {
+      "name": "id",
+      "type": "uint32"
+    },
+    {
+      "name": "mask_id",
+      "type": "int32"
+    },
+    {
+      "name": "internal_name",
+      "type": "string"
+    },
+    {
+      "name": "name",
+      "type": "Loc"
+    }
+  ],
+  "tableName": "factiongroup"
+}

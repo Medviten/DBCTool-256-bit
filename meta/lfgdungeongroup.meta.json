@@ -1,0 +1,29 @@
+{
+  "file": "LFGDungeonGroup.dbc",
+  "primaryKeys": [
+    "id"
+  ],
+  "fields": [
+    {
+      "name": "id",
+      "type": "uint32"
+    },
+    {
+      "name": "name",
+      "type": "Loc"
+    },
+    {
+      "name": "order",
+      "type": "uint32"
+    },
+    {
+      "name": "parent",
+      "type": "uint32"
+    },
+    {
+      "name": "type",
+      "type": "uint32"
+    }
+  ],
+  "tableName": "lfgdungeongroup"
+}

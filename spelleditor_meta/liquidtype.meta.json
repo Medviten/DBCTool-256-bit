@@ -1,0 +1,189 @@
+{
+  "file": "LiquidType.dbc",
+  "tableName": "liquidtype",
+  "primaryKeys": [
+    "id"
+  ],
+  "fields": [
+    {
+      "name": "id",
+      "type": "uint32"
+    },
+    {
+      "name": "name",
+      "type": "string"
+    },
+    {
+      "name": "flags",
+      "type": "uint32"
+    },
+    {
+      "name": "type",
+      "type": "uint32"
+    },
+    {
+      "name": "sound_id",
+      "type": "uint32"
+    },
+    {
+      "name": "spell_id",
+      "type": "uint32"
+    },
+    {
+      "name": "max_darken_depth",
+      "type": "float"
+    },
+    {
+      "name": "fog_darkenintensity",
+      "type": "float"
+    },
+    {
+      "name": "amb_darkenintensity",
+      "type": "float"
+    },
+    {
+      "name": "dir_darkenintensity",
+      "type": "float"
+    },
+    {
+      "name": "light_id",
+      "type": "uint32"
+    },
+    {
+      "name": "particle_scale",
+      "type": "float"
+    },
+    {
+      "name": "particle_movement",
+      "type": "uint32"
+    },
+    {
+      "name": "particle_tex_slots",
+      "type": "uint32"
+    },
+    {
+      "name": "material_id",
+      "type": "uint32"
+    },
+    {
+      "name": "texture_1",
+      "type": "string"
+    },
+    {
+      "name": "texture_2",
+      "type": "string"
+    },
+    {
+      "name": "texture_3",
+      "type": "string"
+    },
+    {
+      "name": "texture_4",
+      "type": "string"
+    },
+    {
+      "name": "texture_5",
+      "type": "string"
+    },
+    {
+      "name": "texture_6",
+      "type": "string"
+    },
+    {
+      "name": "color_1",
+      "type": "uint32"
+    },
+    {
+      "name": "color_2",
+      "type": "uint32"
+    },
+    {
+      "name": "float_1",
+      "type": "float"
+    },
+    {
+      "name": "float_2",
+      "type": "float"
+    },
+    {
+      "name": "float_3",
+      "type": "float"
+    },
+    {
+      "name": "float_4",
+      "type": "float"
+    },
+    {
+      "name": "float_5",
+      "type": "float"
+    },
+    {
+      "name": "float_6",
+      "type": "float"
+    },
+    {
+      "name": "float_7",
+      "type": "float"
+    },
+    {
+      "name": "float_8",
+      "type": "float"
+    },
+    {
+      "name": "float_9",
+      "type": "float"
+    },
+    {
+      "name": "float_10",
+      "type": "float"
+    },
+    {
+      "name": "float_11",
+      "type": "float"
+    },
+    {
+      "name": "float_12",
+      "type": "float"
+    },
+    {
+      "name": "float_13",
+      "type": "float"
+    },
+    {
+      "name": "float_14",
+      "type": "float"
+    },
+    {
+      "name": "float_15",
+      "type": "float"
+    },
+    {
+      "name": "float_16",
+      "type": "float"
+    },
+    {
+      "name": "float_17",
+      "type": "float"
+    },
+    {
+      "name": "float_18",
+      "type": "float"
+    },
+    {
+      "name": "int_1",
+      "type": "uint32"
+    },
+    {
+      "name": "int_2",
+      "type": "uint32"
+    },
+    {
+      "name": "int_3",
+      "type": "uint32"
+    },
+    {
+      "name": "int_4",
+      "type": "uint32"
+    }
+  ]
+}

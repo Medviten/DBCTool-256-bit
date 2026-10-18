@@ -1,0 +1,21 @@
+{
+  "file": "LightSkybox.dbc",
+  "tableName": "lightskybox",
+  "primaryKeys": [
+    "id"
+  ],
+  "fields": [
+    {
+      "name": "id",
+      "type": "uint32"
+    },
+    {
+      "name": "name",
+      "type": "string"
+    },
+    {
+      "name": "flags",
+      "type": "uint32"
+    }
+  ]
+}

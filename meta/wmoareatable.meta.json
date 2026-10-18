@@ -1,0 +1,71 @@
+{
+  "file": "WMOAreaTable.dbc",
+  "primaryKeys": [
+    "id"
+  ],
+  "sortOrder": [
+    {
+      "name": "wmo_id",
+      "direction": "ASC"
+    },
+    {
+      "name": "name_set_id",
+      "direction": "ASC"
+    },
+    {
+      "name": "wmo_group_id",
+      "direction": "ASC"
+    }
+  ],
+  "fields": [
+    {
+      "name": "id",
+      "type": "int32"
+    },
+    {
+      "name": "wmo_id",
+      "type": "int32"
+    },
+    {
+      "name": "name_set_id",
+      "type": "int32"
+    },
+    {
+      "name": "wmo_group_id",
+      "type": "int32"
+    },
+    {
+      "name": "sound_provider_pref",
+      "type": "uint32"
+    },
+    {
+      "name": "sound_provider_pref_underwater",
+      "type": "uint32"
+    },
+    {
+      "name": "ambience_id",
+      "type": "uint32"
+    },
+    {
+      "name": "zone_music",
+      "type": "uint32"
+    },
+    {
+      "name": "intro_sound",
+      "type": "uint32"
+    },
+    {
+      "name": "flags",
+      "type": "uint32"
+    },
+    {
+      "name": "area_table_id",
+      "type": "uint32"
+    },
+    {
+      "name": "name",
+      "type": "Loc"
+    }
+  ],
+  "tableName": "wmoareatable"
+}

@@ -1,0 +1,47 @@
+{
+  "file": "TalentTab.dbc",
+  "tableName": "talenttab",
+  "primaryKeys": [
+    "id"
+  ],
+  "sortOrder": [
+    {
+      "name": "id",
+      "direction": "ASC"
+    }
+  ],
+  "fields": [
+    {
+      "name": "id",
+      "type": "uint32"
+    },
+    {
+      "name": "name",
+      "type": "Loc"
+    },
+    {
+      "name": "spell_icon_id",
+      "type": "uint32"
+    },
+    {
+      "name": "race_mask",
+      "type": "uint32"
+    },
+    {
+      "name": "class_mask",
+      "type": "uint32"
+    },
+    {
+      "name": "category_enum_id",
+      "type": "uint32"
+    },
+    {
+      "name": "order_index",
+      "type": "uint32"
+    },
+    {
+      "name": "background_file",
+      "type": "string"
+    }
+  ]
+}

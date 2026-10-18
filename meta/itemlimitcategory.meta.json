@@ -1,0 +1,25 @@
+{
+  "file": "ItemLimitCategory.dbc",
+  "primaryKeys": [
+    "id"
+  ],
+  "fields": [
+    {
+      "name": "id",
+      "type": "uint32"
+    },
+    {
+      "name": "name",
+      "type": "Loc"
+    },
+    {
+      "name": "quantity",
+      "type": "uint32"
+    },
+    {
+      "name": "flags",
+      "type": "uint32"
+    }
+  ],
+  "tableName": "itemlimitcategory"
+}

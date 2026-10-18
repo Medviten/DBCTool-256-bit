@@ -1,16 +1,46 @@
 {
   "file": "ItemSet.dbc",
-  "primaryKeys": ["id"],
+  "primaryKeys": [
+    "id"
+  ],
   "sortOrder": [
-    {"name": "id", "direction": "ASC"}
+    {
+      "name": "id",
+      "direction": "ASC"
+    }
   ],
   "fields": [
-    {"name": "id", "type": "uint32"},
-    {"name": "name", "type": "Loc"},
-    {"name": "item", "type": "uint32", "count":17},
-    {"name": "effect_spell_id", "type": "uint32", "count":8},
-    {"name": "effect_item_count", "type": "uint32", "count":8},
-    {"name": "req_skill_id", "type": "uint32"},
-    {"name": "req_skill_rank", "type": "uint32"}
-  ]
+    {
+      "name": "id",
+      "type": "uint32"
+    },
+    {
+      "name": "name",
+      "type": "Loc"
+    },
+    {
+      "name": "item",
+      "type": "uint32",
+      "count": 17
+    },
+    {
+      "name": "effect_spell_id",
+      "type": "uint32",
+      "count": 8
+    },
+    {
+      "name": "effect_item_count",
+      "type": "uint32",
+      "count": 8
+    },
+    {
+      "name": "req_skill_id",
+      "type": "uint32"
+    },
+    {
+      "name": "req_skill_rank",
+      "type": "uint32"
+    }
+  ],
+  "tableName": "itemset"
 }

@@ -1,0 +1,229 @@
+{
+  "file": "Holidays.dbc",
+  "tableName": "holidays",
+  "primaryKeys": [
+    "id"
+  ],
+  "fields": [
+    {
+      "name": "id",
+      "type": "uint32"
+    },
+    {
+      "name": "duration_1",
+      "type": "int32"
+    },
+    {
+      "name": "duration_2",
+      "type": "int32"
+    },
+    {
+      "name": "duration_3",
+      "type": "int32"
+    },
+    {
+      "name": "duration_4",
+      "type": "int32"
+    },
+    {
+      "name": "duration_5",
+      "type": "int32"
+    },
+    {
+      "name": "duration_6",
+      "type": "int32"
+    },
+    {
+      "name": "duration_7",
+      "type": "int32"
+    },
+    {
+      "name": "duration_8",
+      "type": "int32"
+    },
+    {
+      "name": "duration_9",
+      "type": "int32"
+    },
+    {
+      "name": "duration_10",
+      "type": "int32"
+    },
+    {
+      "name": "event_date_1",
+      "type": "int32"
+    },
+    {
+      "name": "event_date_2",
+      "type": "int32"
+    },
+    {
+      "name": "event_date_3",
+      "type": "int32"
+    },
+    {
+      "name": "event_date_4",
+      "type": "int32"
+    },
+    {
+      "name": "event_date_5",
+      "type": "int32"
+    },
+    {
+      "name": "event_date_6",
+      "type": "int32"
+    },
+    {
+      "name": "event_date_7",
+      "type": "int32"
+    },
+    {
+      "name": "event_date_8",
+      "type": "int32"
+    },
+    {
+      "name": "event_date_9",
+      "type": "int32"
+    },
+    {
+      "name": "event_date_10",
+      "type": "int32"
+    },
+    {
+      "name": "event_date_11",
+      "type": "int32"
+    },
+    {
+      "name": "event_date_12",
+      "type": "int32"
+    },
+    {
+      "name": "event_date_13",
+      "type": "int32"
+    },
+    {
+      "name": "event_date_14",
+      "type": "int32"
+    },
+    {
+      "name": "event_date_15",
+      "type": "int32"
+    },
+    {
+      "name": "event_date_16",
+      "type": "int32"
+    },
+    {
+      "name": "event_date_17",
+      "type": "int32"
+    },
+    {
+      "name": "event_date_18",
+      "type": "int32"
+    },
+    {
+      "name": "event_date_19",
+      "type": "int32"
+    },
+    {
+      "name": "event_date_20",
+      "type": "int32"
+    },
+    {
+      "name": "event_date_21",
+      "type": "int32"
+    },
+    {
+      "name": "event_date_22",
+      "type": "int32"
+    },
+    {
+      "name": "event_date_23",
+      "type": "int32"
+    },
+    {
+      "name": "event_date_24",
+      "type": "int32"
+    },
+    {
+      "name": "event_date_25",
+      "type": "int32"
+    },
+    {
+      "name": "event_date_26",
+      "type": "int32"
+    },
+    {
+      "name": "region",
+      "type": "int32"
+    },
+    {
+      "name": "looping",
+      "type": "int32"
+    },
+    {
+      "name": "calendar_flags_1",
+      "type": "int32"
+    },
+    {
+      "name": "calendar_flags_2",
+      "type": "int32"
+    },
+    {
+      "name": "calendar_flags_3",
+      "type": "int32"
+    },
+    {
+      "name": "calendar_flags_4",
+      "type": "int32"
+    },
+    {
+      "name": "calendar_flags_5",
+      "type": "int32"
+    },
+    {
+      "name": "calendar_flags_6",
+      "type": "int32"
+    },
+    {
+      "name": "calendar_flags_7",
+      "type": "int32"
+    },
+    {
+      "name": "calendar_flags_8",
+      "type": "int32"
+    },
+    {
+      "name": "calendar_flags_9",
+      "type": "int32"
+    },
+    {
+      "name": "calendar_flags_10",
+      "type": "int32"
+    },
+    {
+      "name": "event_calendar_name",
+      "type": "uint32"
+    },
+    {
+      "name": "event_calendar_description",
+      "type": "uint32"
+    },
+    {
+      "name": "event_calendar_overlay",
+      "type": "string"
+    },
+    {
+      "name": "priority",
+      "type": "int32"
+    },
+    {
+      "name": "event_scheduler_type",
+      "type": "int32"
+    },
+    {
+      "name": "event_flags",
+      "type": "int32"
+    }
+  ]
+}

@@ -1,0 +1,124 @@
+{
+  "file": "Talent.dbc",
+  "tableName": "talent",
+  "primaryKeys": [
+    "id"
+  ],
+  "uniqueKeys": [
+    [
+      "talent_tab_id",
+      "tier_id",
+      "column_index",
+      "allow_for_pet_flags_1",
+      "allow_for_pet_flags_2"
+    ]
+  ],
+  "sortOrder": [
+    {
+      "name": "talent_tab_id",
+      "direction": "ASC"
+    },
+    {
+      "name": "tier_id",
+      "direction": "ASC"
+    },
+    {
+      "name": "column_index",
+      "direction": "ASC"
+    }
+  ],
+  "fields": [
+    {
+      "name": "id",
+      "type": "uint32"
+    },
+    {
+      "name": "talent_tab_id",
+      "type": "uint32"
+    },
+    {
+      "name": "tier_id",
+      "type": "uint32"
+    },
+    {
+      "name": "column_index",
+      "type": "uint32"
+    },
+    {
+      "name": "spell_rank_1",
+      "type": "uint32"
+    },
+    {
+      "name": "spell_rank_2",
+      "type": "uint32"
+    },
+    {
+      "name": "spell_rank_3",
+      "type": "uint32"
+    },
+    {
+      "name": "spell_rank_4",
+      "type": "uint32"
+    },
+    {
+      "name": "spell_rank_5",
+      "type": "uint32"
+    },
+    {
+      "name": "spell_rank_6",
+      "type": "uint32"
+    },
+    {
+      "name": "spell_rank_7",
+      "type": "uint32"
+    },
+    {
+      "name": "spell_rank_8",
+      "type": "uint32"
+    },
+    {
+      "name": "spell_rank_9",
+      "type": "uint32"
+    },
+    {
+      "name": "prereq_talent_1",
+      "type": "uint32"
+    },
+    {
+      "name": "prereq_talent_2",
+      "type": "uint32"
+    },
+    {
+      "name": "prereq_talent_3",
+      "type": "uint32"
+    },
+    {
+      "name": "prereq_rank_1",
+      "type": "uint32"
+    },
+    {
+      "name": "prereq_rank_2",
+      "type": "uint32"
+    },
+    {
+      "name": "prereq_rank_3",
+      "type": "uint32"
+    },
+    {
+      "name": "flags",
+      "type": "uint32"
+    },
+    {
+      "name": "required_spell_id",
+      "type": "uint32"
+    },
+    {
+      "name": "allow_for_pet_flags_1",
+      "type": "uint32"
+    },
+    {
+      "name": "allow_for_pet_flags_2",
+      "type": "uint32"
+    }
+  ]
+}

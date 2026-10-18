@@ -1,0 +1,65 @@
+{
+  "file": "Faction.dbc",
+  "primaryKeys": [
+    "id"
+  ],
+  "sortOrder": [
+    {
+      "name": "id",
+      "direction": "ASC"
+    }
+  ],
+  "fields": [
+    {
+      "name": "id",
+      "type": "uint32"
+    },
+    {
+      "name": "reputation_index",
+      "type": "int32"
+    },
+    {
+      "name": "reputation_race_mask",
+      "type": "int32",
+      "count": 4
+    },
+    {
+      "name": "reputation_class_mask",
+      "type": "int32",
+      "count": 4
+    },
+    {
+      "name": "reputation_base",
+      "type": "int32",
+      "count": 4
+    },
+    {
+      "name": "reputation_flags",
+      "type": "int32",
+      "count": 4
+    },
+    {
+      "name": "parent_faction_id",
+      "type": "uint32"
+    },
+    {
+      "name": "parent_faction_mod",
+      "type": "float",
+      "count": 2
+    },
+    {
+      "name": "parent_faction_cap",
+      "type": "int32",
+      "count": 2
+    },
+    {
+      "name": "name",
+      "type": "Loc"
+    },
+    {
+      "name": "description",
+      "type": "Loc"
+    }
+  ],
+  "tableName": "faction"
+}

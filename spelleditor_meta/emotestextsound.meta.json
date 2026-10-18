@@ -1,0 +1,35 @@
+{
+  "file": "EmotesTextSound.dbc",
+  "tableName": "emotestextsound",
+  "primaryKeys": [
+    "id"
+  ],
+  "sortOrder": [
+    {
+      "name": "id",
+      "direction": "ASC"
+    }
+  ],
+  "fields": [
+    {
+      "name": "id",
+      "type": "uint32"
+    },
+    {
+      "name": "emotes_text_id",
+      "type": "uint32"
+    },
+    {
+      "name": "race_id",
+      "type": "uint32"
+    },
+    {
+      "name": "sex_id",
+      "type": "uint32"
+    },
+    {
+      "name": "sound_id",
+      "type": "uint32"
+    }
+  ]
+}

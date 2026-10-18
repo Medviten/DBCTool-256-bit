@@ -1,11 +1,23 @@
 {
   "file": "SpellCategory.dbc",
-  "primaryKeys": ["id"],
+  "primaryKeys": [
+    "id"
+  ],
   "sortOrder": [
-    {"name": "id", "direction": "ASC"}
+    {
+      "name": "id",
+      "direction": "ASC"
+    }
   ],
   "fields": [
-    {"name": "id", "type": "uint32"},
-    {"name": "flags", "type": "uint32"}
-  ]
+    {
+      "name": "id",
+      "type": "uint32"
+    },
+    {
+      "name": "flags",
+      "type": "uint32"
+    }
+  ],
+  "tableName": "spellcategory"
 }

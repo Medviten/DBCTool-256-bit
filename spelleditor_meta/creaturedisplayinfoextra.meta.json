@@ -1,0 +1,99 @@
+{
+  "file": "CreatureDisplayInfoExtra.dbc",
+  "tableName": "creaturedisplayinfoextra",
+  "primaryKeys": [
+    "id"
+  ],
+  "sortOrder": [
+    {
+      "name": "id",
+      "direction": "ASC"
+    }
+  ],
+  "fields": [
+    {
+      "name": "id",
+      "type": "uint32"
+    },
+    {
+      "name": "display_race_id",
+      "type": "uint32"
+    },
+    {
+      "name": "display_sex_id",
+      "type": "uint32"
+    },
+    {
+      "name": "skin_id",
+      "type": "uint32"
+    },
+    {
+      "name": "face_id",
+      "type": "uint32"
+    },
+    {
+      "name": "hair_style_id",
+      "type": "uint32"
+    },
+    {
+      "name": "hair_color_id",
+      "type": "uint32"
+    },
+    {
+      "name": "facial_hair_id",
+      "type": "uint32"
+    },
+    {
+      "name": "head_display_id",
+      "type": "uint32"
+    },
+    {
+      "name": "shoulders_display_id",
+      "type": "uint32"
+    },
+    {
+      "name": "shirt_display_id",
+      "type": "uint32"
+    },
+    {
+      "name": "chest_display_id",
+      "type": "uint32"
+    },
+    {
+      "name": "belt_display_id",
+      "type": "uint32"
+    },
+    {
+      "name": "legs_display_id",
+      "type": "uint32"
+    },
+    {
+      "name": "boots_display_id",
+      "type": "uint32"
+    },
+    {
+      "name": "bracers_display_id",
+      "type": "uint32"
+    },
+    {
+      "name": "gloves_display_id",
+      "type": "uint32"
+    },
+    {
+      "name": "tabard_display_id",
+      "type": "uint32"
+    },
+    {
+      "name": "cape_display_id",
+      "type": "uint32"
+    },
+    {
+      "name": "flags",
+      "type": "uint32"
+    },
+    {
+      "name": "baked_texture_idblp",
+      "type": "string"
+    }
+  ]
+}

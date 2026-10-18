@@ -1,0 +1,81 @@
+{
+  "file": "HolidayDescriptions.dbc",
+  "tableName": "holidaydescriptions",
+  "primaryKeys": [
+    "id"
+  ],
+  "fields": [
+    {
+      "name": "id",
+      "type": "uint32"
+    },
+    {
+      "name": "description_1",
+      "type": "string"
+    },
+    {
+      "name": "description_2",
+      "type": "string"
+    },
+    {
+      "name": "description_3",
+      "type": "string"
+    },
+    {
+      "name": "description_4",
+      "type": "string"
+    },
+    {
+      "name": "description_5",
+      "type": "string"
+    },
+    {
+      "name": "description_6",
+      "type": "string"
+    },
+    {
+      "name": "description_7",
+      "type": "string"
+    },
+    {
+      "name": "description_8",
+      "type": "string"
+    },
+    {
+      "name": "description_9",
+      "type": "string"
+    },
+    {
+      "name": "description_10",
+      "type": "string"
+    },
+    {
+      "name": "description_11",
+      "type": "string"
+    },
+    {
+      "name": "description_12",
+      "type": "string"
+    },
+    {
+      "name": "description_13",
+      "type": "string"
+    },
+    {
+      "name": "description_14",
+      "type": "string"
+    },
+    {
+      "name": "description_15",
+      "type": "string"
+    },
+    {
+      "name": "description_16",
+      "type": "string"
+    },
+    {
+      "name": "description_flags",
+      "type": "uint32"
+    }
+  ]
+}

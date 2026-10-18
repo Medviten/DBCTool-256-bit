@@ -1,0 +1,149 @@
+{
+  "file": "SpellShapeshiftForm.dbc",
+  "tableName": "spellshapeshiftform",
+  "primaryKeys": [
+    "id"
+  ],
+  "fields": [
+    {
+      "name": "id",
+      "type": "uint32"
+    },
+    {
+      "name": "action_bar",
+      "type": "uint32"
+    },
+    {
+      "name": "name_1",
+      "type": "string"
+    },
+    {
+      "name": "name_2",
+      "type": "string"
+    },
+    {
+      "name": "name_3",
+      "type": "string"
+    },
+    {
+      "name": "name_4",
+      "type": "string"
+    },
+    {
+      "name": "name_5",
+      "type": "string"
+    },
+    {
+      "name": "name_6",
+      "type": "string"
+    },
+    {
+      "name": "name_7",
+      "type": "string"
+    },
+    {
+      "name": "name_8",
+      "type": "string"
+    },
+    {
+      "name": "name_9",
+      "type": "string"
+    },
+    {
+      "name": "name_10",
+      "type": "string"
+    },
+    {
+      "name": "name_11",
+      "type": "string"
+    },
+    {
+      "name": "name_12",
+      "type": "string"
+    },
+    {
+      "name": "name_13",
+      "type": "string"
+    },
+    {
+      "name": "name_14",
+      "type": "string"
+    },
+    {
+      "name": "name_15",
+      "type": "string"
+    },
+    {
+      "name": "name_16",
+      "type": "string"
+    },
+    {
+      "name": "name_flag",
+      "type": "uint32"
+    },
+    {
+      "name": "creature_type_1",
+      "type": "int32"
+    },
+    {
+      "name": "creature_type_2",
+      "type": "int32"
+    },
+    {
+      "name": "spell_icon",
+      "type": "int32"
+    },
+    {
+      "name": "combat_round_time",
+      "type": "int32"
+    },
+    {
+      "name": "display_1",
+      "type": "uint32"
+    },
+    {
+      "name": "display_2",
+      "type": "uint32"
+    },
+    {
+      "name": "display_3",
+      "type": "uint32"
+    },
+    {
+      "name": "display_4",
+      "type": "uint32"
+    },
+    {
+      "name": "preset_spell_id_1",
+      "type": "uint32"
+    },
+    {
+      "name": "preset_spell_id_2",
+      "type": "uint32"
+    },
+    {
+      "name": "preset_spell_id_3",
+      "type": "uint32"
+    },
+    {
+      "name": "preset_spell_id_4",
+      "type": "uint32"
+    },
+    {
+      "name": "preset_spell_id_5",
+      "type": "uint32"
+    },
+    {
+      "name": "preset_spell_id_6",
+      "type": "uint32"
+    },
+    {
+      "name": "preset_spell_id_7",
+      "type": "uint32"
+    },
+    {
+      "name": "preset_spell_id_8",
+      "type": "uint32"
+    }
+  ]
+}

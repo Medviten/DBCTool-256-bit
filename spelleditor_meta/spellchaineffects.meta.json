@@ -1,0 +1,201 @@
+{
+  "file": "SpellChainEffects.dbc",
+  "tableName": "spellchaineffects",
+  "primaryKeys": [
+    "id"
+  ],
+  "fields": [
+    {
+      "name": "id",
+      "type": "uint32"
+    },
+    {
+      "name": "avg_seg_len",
+      "type": "float"
+    },
+    {
+      "name": "width",
+      "type": "float"
+    },
+    {
+      "name": "noise_scale",
+      "type": "float"
+    },
+    {
+      "name": "tex_coord_scale",
+      "type": "float"
+    },
+    {
+      "name": "seg_duration",
+      "type": "int32"
+    },
+    {
+      "name": "seg_delay",
+      "type": "int32"
+    },
+    {
+      "name": "texture",
+      "type": "string"
+    },
+    {
+      "name": "flags",
+      "type": "uint32"
+    },
+    {
+      "name": "joint_count",
+      "type": "uint32"
+    },
+    {
+      "name": "joint_offset_radius",
+      "type": "float"
+    },
+    {
+      "name": "joints_per_minor_joint",
+      "type": "int32"
+    },
+    {
+      "name": "minor_joints_per_major_point",
+      "type": "int32"
+    },
+    {
+      "name": "minor_joint_scale",
+      "type": "float"
+    },
+    {
+      "name": "major_joint_scale",
+      "type": "float"
+    },
+    {
+      "name": "joint_move_speed",
+      "type": "float"
+    },
+    {
+      "name": "joint_smoothness",
+      "type": "float"
+    },
+    {
+      "name": "min_duration_between_joint_jumps",
+      "type": "float"
+    },
+    {
+      "name": "max_duration_between_joint_jumps",
+      "type": "float"
+    },
+    {
+      "name": "wave_height",
+      "type": "float"
+    },
+    {
+      "name": "wave_freq",
+      "type": "float"
+    },
+    {
+      "name": "wave_speed",
+      "type": "float"
+    },
+    {
+      "name": "min_wave_angle",
+      "type": "float"
+    },
+    {
+      "name": "max_wave_angle",
+      "type": "float"
+    },
+    {
+      "name": "min_wave_spin",
+      "type": "float"
+    },
+    {
+      "name": "max_wave_spin",
+      "type": "float"
+    },
+    {
+      "name": "arc_height",
+      "type": "float"
+    },
+    {
+      "name": "min_arc_angle",
+      "type": "float"
+    },
+    {
+      "name": "max_arc_angle",
+      "type": "float"
+    },
+    {
+      "name": "min_arc_spin",
+      "type": "float"
+    },
+    {
+      "name": "max_arc_spin",
+      "type": "float"
+    },
+    {
+      "name": "delay_between_effects",
+      "type": "float"
+    },
+    {
+      "name": "min_flicker_on_duration",
+      "type": "float"
+    },
+    {
+      "name": "max_flicker_on_duration",
+      "type": "float"
+    },
+    {
+      "name": "min_flicker_off_duration",
+      "type": "float"
+    },
+    {
+      "name": "max_flicker_off_duration",
+      "type": "float"
+    },
+    {
+      "name": "pulse_speed",
+      "type": "float"
+    },
+    {
+      "name": "pulse_on_length",
+      "type": "float"
+    },
+    {
+      "name": "pulse_fade_length",
+      "type": "float"
+    },
+    {
+      "name": "alpha",
+      "type": "uint8"
+    },
+    {
+      "name": "red",
+      "type": "uint8"
+    },
+    {
+      "name": "green",
+      "type": "uint8"
+    },
+    {
+      "name": "blue",
+      "type": "uint8"
+    },
+    {
+      "name": "blend_mode",
+      "type": "uint8"
+    },
+    {
+      "name": "combo",
+      "type": "string"
+    },
+    {
+      "name": "render_layer",
+      "type": "int32"
+    },
+    {
+      "name": "texture_length",
+      "type": "float"
+    },
+    {
+      "name": "wave_phase",
+      "type": "float"
+    }
+  ]
+}

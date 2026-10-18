@@ -1,11 +1,23 @@
 {
   "file": "SpellMechanic.dbc",
-  "primaryKeys": ["id"],
+  "primaryKeys": [
+    "id"
+  ],
   "sortOrder": [
-    {"name": "id", "direction": "ASC"}
+    {
+      "name": "id",
+      "direction": "ASC"
+    }
   ],
   "fields": [
-    {"name": "id", "type": "uint32"},
-    {"name": "name", "type": "Loc"}
-  ]
+    {
+      "name": "id",
+      "type": "uint32"
+    },
+    {
+      "name": "name",
+      "type": "Loc"
+    }
+  ],
+  "tableName": "spellmechanic"
 }

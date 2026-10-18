@@ -1,0 +1,8 @@
+uint itemID
+uint ItemClass
+uint ItemSubClass
+int sound_override_subclassid
+int MaterialID
+uint ItemDisplayInfo
+uint InventorySlotID
+uint SheathID

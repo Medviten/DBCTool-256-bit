@@ -1,0 +1,27 @@
+{
+  "file": "SoundAmbience.dbc",
+  "tableName": "soundambience",
+  "primaryKeys": [
+    "id"
+  ],
+  "sortOrder": [
+    {
+      "name": "id",
+      "direction": "ASC"
+    }
+  ],
+  "fields": [
+    {
+      "name": "id",
+      "type": "uint32"
+    },
+    {
+      "name": "sound_entry_id_day",
+      "type": "uint32"
+    },
+    {
+      "name": "sound_entry_id_night",
+      "type": "uint32"
+    }
+  ]
+}

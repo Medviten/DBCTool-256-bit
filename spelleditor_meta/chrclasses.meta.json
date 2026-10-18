@@ -1,0 +1,255 @@
+{
+  "file": "ChrClasses.dbc",
+  "tableName": "chrclasses",
+  "primaryKeys": [
+    "id"
+  ],
+  "sortOrder": [
+    {
+      "name": "id",
+      "direction": "ASC"
+    }
+  ],
+  "fields": [
+    {
+      "name": "id",
+      "type": "uint32"
+    },
+    {
+      "name": "field_01",
+      "type": "uint32"
+    },
+    {
+      "name": "display_power",
+      "type": "uint32"
+    },
+    {
+      "name": "pet_name_token",
+      "type": "uint32"
+    },
+    {
+      "name": "name_1",
+      "type": "string"
+    },
+    {
+      "name": "name_2",
+      "type": "string"
+    },
+    {
+      "name": "name_3",
+      "type": "string"
+    },
+    {
+      "name": "name_4",
+      "type": "string"
+    },
+    {
+      "name": "name_5",
+      "type": "string"
+    },
+    {
+      "name": "name_6",
+      "type": "string"
+    },
+    {
+      "name": "name_7",
+      "type": "string"
+    },
+    {
+      "name": "name_8",
+      "type": "string"
+    },
+    {
+      "name": "name_9",
+      "type": "string"
+    },
+    {
+      "name": "name_10",
+      "type": "string"
+    },
+    {
+      "name": "name_11",
+      "type": "string"
+    },
+    {
+      "name": "name_12",
+      "type": "string"
+    },
+    {
+      "name": "name_13",
+      "type": "string"
+    },
+    {
+      "name": "name_14",
+      "type": "string"
+    },
+    {
+      "name": "name_15",
+      "type": "string"
+    },
+    {
+      "name": "name_16",
+      "type": "string"
+    },
+    {
+      "name": "name_flags",
+      "type": "uint32"
+    },
+    {
+      "name": "name_female_1",
+      "type": "string"
+    },
+    {
+      "name": "name_female_2",
+      "type": "string"
+    },
+    {
+      "name": "name_female_3",
+      "type": "string"
+    },
+    {
+      "name": "name_female_4",
+      "type": "string"
+    },
+    {
+      "name": "name_female_5",
+      "type": "string"
+    },
+    {
+      "name": "name_female_6",
+      "type": "string"
+    },
+    {
+      "name": "name_female_7",
+      "type": "string"
+    },
+    {
+      "name": "name_female_8",
+      "type": "string"
+    },
+    {
+      "name": "name_female_9",
+      "type": "string"
+    },
+    {
+      "name": "name_female_10",
+      "type": "string"
+    },
+    {
+      "name": "name_female_11",
+      "type": "string"
+    },
+    {
+      "name": "name_female_12",
+      "type": "string"
+    },
+    {
+      "name": "name_female_13",
+      "type": "string"
+    },
+    {
+      "name": "name_female_14",
+      "type": "string"
+    },
+    {
+      "name": "name_female_15",
+      "type": "string"
+    },
+    {
+      "name": "name_female_16",
+      "type": "string"
+    },
+    {
+      "name": "name_female_flags",
+      "type": "uint32"
+    },
+    {
+      "name": "name_male_1",
+      "type": "string"
+    },
+    {
+      "name": "name_male_2",
+      "type": "string"
+    },
+    {
+      "name": "name_male_3",
+      "type": "string"
+    },
+    {
+      "name": "name_male_4",
+      "type": "string"
+    },
+    {
+      "name": "name_male_5",
+      "type": "string"
+    },
+    {
+      "name": "name_male_6",
+      "type": "string"
+    },
+    {
+      "name": "name_male_7",
+      "type": "string"
+    },
+    {
+      "name": "name_male_8",
+      "type": "string"
+    },
+    {
+      "name": "name_male_9",
+      "type": "string"
+    },
+    {
+      "name": "name_male_10",
+      "type": "string"
+    },
+    {
+      "name": "name_male_11",
+      "type": "string"
+    },
+    {
+      "name": "name_male_12",
+      "type": "string"
+    },
+    {
+      "name": "name_male_13",
+      "type": "string"
+    },
+    {
+      "name": "name_male_14",
+      "type": "string"
+    },
+    {
+      "name": "name_male_15",
+      "type": "string"
+    },
+    {
+      "name": "name_male_16",
+      "type": "string"
+    },
+    {
+      "name": "name_male_flags",
+      "type": "uint32"
+    },
+    {
+      "name": "file_name",
+      "type": "string"
+    },
+    {
+      "name": "spell_class_set",
+      "type": "uint32"
+    },
+    {
+      "name": "flags",
+      "type": "uint32"
+    },
+    {
+      "name": "cinematic_sequence_id",
+      "type": "uint32"
+    },
+    {
+      "name": "required_expansion",
+      "type": "uint32"
+    }
+  ]
+}

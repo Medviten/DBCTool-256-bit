@@ -1,0 +1,169 @@
+{
+  "file": "Vehicle.dbc",
+  "tableName": "vehicle",
+  "primaryKeys": [
+    "id"
+  ],
+  "fields": [
+    {
+      "name": "id",
+      "type": "uint32"
+    },
+    {
+      "name": "flags",
+      "type": "uint32"
+    },
+    {
+      "name": "turn_speed",
+      "type": "float"
+    },
+    {
+      "name": "pitch_speed",
+      "type": "float"
+    },
+    {
+      "name": "pitch_min",
+      "type": "float"
+    },
+    {
+      "name": "pitch_max",
+      "type": "float"
+    },
+    {
+      "name": "seat_id_1",
+      "type": "uint32"
+    },
+    {
+      "name": "seat_id_2",
+      "type": "uint32"
+    },
+    {
+      "name": "seat_id_3",
+      "type": "uint32"
+    },
+    {
+      "name": "seat_id_4",
+      "type": "uint32"
+    },
+    {
+      "name": "seat_id_5",
+      "type": "uint32"
+    },
+    {
+      "name": "seat_id_6",
+      "type": "uint32"
+    },
+    {
+      "name": "seat_id_7",
+      "type": "uint32"
+    },
+    {
+      "name": "seat_id_8",
+      "type": "uint32"
+    },
+    {
+      "name": "mouse_look_offset_pitch",
+      "type": "float"
+    },
+    {
+      "name": "camera_fade_dist_scalar_min",
+      "type": "float"
+    },
+    {
+      "name": "camera_fade_dist_scalar_max",
+      "type": "float"
+    },
+    {
+      "name": "camera_pitch_offset",
+      "type": "float"
+    },
+    {
+      "name": "facing_limit_right",
+      "type": "float"
+    },
+    {
+      "name": "facing_limit_left",
+      "type": "float"
+    },
+    {
+      "name": "mssl_trgt_turn_lingering",
+      "type": "float"
+    },
+    {
+      "name": "mssl_trgt_pitch_lingering",
+      "type": "float"
+    },
+    {
+      "name": "mssl_trgt_mouse_lingering",
+      "type": "float"
+    },
+    {
+      "name": "mssl_trgt_end_opacity",
+      "type": "float"
+    },
+    {
+      "name": "mssl_trgt_arc_speed",
+      "type": "float"
+    },
+    {
+      "name": "mssl_trgt_arc_repeat",
+      "type": "float"
+    },
+    {
+      "name": "mssl_trgt_arc_width",
+      "type": "float"
+    },
+    {
+      "name": "mssl_trgt_impact_radius_1",
+      "type": "float"
+    },
+    {
+      "name": "mssl_trgt_impact_radius_2",
+      "type": "float"
+    },
+    {
+      "name": "mssl_trgt_arc_texture",
+      "type": "string"
+    },
+    {
+      "name": "mssl_trgt_impact_texture",
+      "type": "string"
+    },
+    {
+      "name": "mssl_trgt_impact_model_1",
+      "type": "string"
+    },
+    {
+      "name": "mssl_trgt_impact_model_2",
+      "type": "string"
+    },
+    {
+      "name": "camera_yaw_offset",
+      "type": "float"
+    },
+    {
+      "name": "ui_locomotion_type",
+      "type": "uint32"
+    },
+    {
+      "name": "mssl_trgt_impact_tex_radius",
+      "type": "float"
+    },
+    {
+      "name": "ui_seat_indicator_type",
+      "type": "uint32"
+    },
+    {
+      "name": "power_display_1",
+      "type": "int32"
+    },
+    {
+      "name": "power_display_2",
+      "type": "int32"
+    },
+    {
+      "name": "power_display_3",
+      "type": "int32"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "file": "LightParams.dbc",
+  "tableName": "lightparams",
+  "primaryKeys": [
+    "id"
+  ],
+  "fields": [
+    {
+      "name": "id",
+      "type": "uint32"
+    },
+    {
+      "name": "higlight_sky",
+      "type": "uint32"
+    },
+    {
+      "name": "skybox_id",
+      "type": "uint32"
+    },
+    {
+      "name": "cloud_type",
+      "type": "int32"
+    },
+    {
+      "name": "glow",
+      "type": "float"
+    },
+    {
+      "name": "water_shallow_alpha",
+      "type": "float"
+    },
+    {
+      "name": "water_deep_alpha",
+      "type": "float"
+    },
+    {
+      "name": "ocean_shallow_alpha",
+      "type": "float"
+    },
+    {
+      "name": "ocean_deep_alpha",
+      "type": "float"
+    }
+  ]
+}

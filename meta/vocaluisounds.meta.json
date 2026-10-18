@@ -1,0 +1,37 @@
+{
+  "file": "VocalUISounds.dbc",
+  "primaryKeys": [
+    "id"
+  ],
+  "sortOrder": [
+    {
+      "name": "id",
+      "direction": "ASC"
+    }
+  ],
+  "fields": [
+    {
+      "name": "id",
+      "type": "uint32"
+    },
+    {
+      "name": "vocal_ui_enum",
+      "type": "uint32"
+    },
+    {
+      "name": "race_id",
+      "type": "uint32"
+    },
+    {
+      "name": "normal_sound_id",
+      "type": "uint32",
+      "count": 2
+    },
+    {
+      "name": "pissed_sound_id",
+      "type": "uint32",
+      "count": 2
+    }
+  ],
+  "tableName": "vocaluisounds"
+}

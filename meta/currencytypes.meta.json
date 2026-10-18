@@ -1,14 +1,35 @@
 {
   "file": "CurrencyTypes.dbc",
-  "primaryKeys": ["id"],
+  "primaryKeys": [
+    "id"
+  ],
   "sortOrder": [
-    {"name": "category", "direction": "ASC"},
-    {"name": "id", "direction": "ASC"}
+    {
+      "name": "category",
+      "direction": "ASC"
+    },
+    {
+      "name": "id",
+      "direction": "ASC"
+    }
   ],
   "fields": [
-    {"name": "id", "type": "uint32"},
-    {"name": "item", "type": "uint32"},
-    {"name": "category", "type": "uint32"},
-    {"name": "bit_index", "type": "uint32"}
-  ]
+    {
+      "name": "id",
+      "type": "uint32"
+    },
+    {
+      "name": "item",
+      "type": "uint32"
+    },
+    {
+      "name": "category",
+      "type": "uint32"
+    },
+    {
+      "name": "bit_index",
+      "type": "uint32"
+    }
+  ],
+  "tableName": "currencytypes"
 }

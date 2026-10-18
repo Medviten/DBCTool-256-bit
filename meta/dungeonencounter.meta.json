@@ -1,0 +1,37 @@
+{
+  "file": "DungeonEncounter.dbc",
+  "primaryKeys": [
+    "id"
+  ],
+  "fields": [
+    {
+      "name": "id",
+      "type": "uint32"
+    },
+    {
+      "name": "map_id",
+      "type": "uint32"
+    },
+    {
+      "name": "difficulty",
+      "type": "uint32"
+    },
+    {
+      "name": "order_index",
+      "type": "int32"
+    },
+    {
+      "name": "bit",
+      "type": "uint32"
+    },
+    {
+      "name": "name",
+      "type": "Loc"
+    },
+    {
+      "name": "icon_id",
+      "type": "uint32"
+    }
+  ],
+  "tableName": "dungeonencounter"
+}

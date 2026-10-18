@@ -1,0 +1,41 @@
+{
+  "file": "LFGDungeonExpansion.dbc",
+  "primaryKeys": [
+    "id"
+  ],
+  "fields": [
+    {
+      "name": "id",
+      "type": "uint32"
+    },
+    {
+      "name": "lfg_id",
+      "type": "uint32"
+    },
+    {
+      "name": "expansion_level",
+      "type": "uint32"
+    },
+    {
+      "name": "random_id",
+      "type": "uint32"
+    },
+    {
+      "name": "hard_level_min",
+      "type": "uint32"
+    },
+    {
+      "name": "hard_level_max",
+      "type": "uint32"
+    },
+    {
+      "name": "target_level_min",
+      "type": "uint32"
+    },
+    {
+      "name": "target_level_max",
+      "type": "uint32"
+    }
+  ],
+  "tableName": "lfgdungeonexpansion"
+}

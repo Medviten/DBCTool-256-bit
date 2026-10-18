@@ -1,0 +1,17 @@
+{
+  "file": "HolidayDescriptions.dbc",
+  "primaryKeys": [
+    "id"
+  ],
+  "fields": [
+    {
+      "name": "id",
+      "type": "uint32"
+    },
+    {
+      "name": "description",
+      "type": "Loc"
+    }
+  ],
+  "tableName": "holidaydescriptions"
+}

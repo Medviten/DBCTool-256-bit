@@ -1,0 +1,69 @@
+{
+  "file": "WorldStateUI.dbc",
+  "primaryKeys": [
+    "id"
+  ],
+  "fields": [
+    {
+      "name": "id",
+      "type": "uint32"
+    },
+    {
+      "name": "map_id",
+      "type": "uint32"
+    },
+    {
+      "name": "area_id",
+      "type": "uint32"
+    },
+    {
+      "name": "phase_shift",
+      "type": "uint32"
+    },
+    {
+      "name": "icon",
+      "type": "string"
+    },
+    {
+      "name": "text",
+      "type": "Loc"
+    },
+    {
+      "name": "tooltip",
+      "type": "Loc"
+    },
+    {
+      "name": "world_state",
+      "type": "int32"
+    },
+    {
+      "name": "type",
+      "type": "int32"
+    },
+    {
+      "name": "dynamic_icon",
+      "type": "string"
+    },
+    {
+      "name": "dynamic_tooltip",
+      "type": "Loc"
+    },
+    {
+      "name": "extended_ui",
+      "type": "string"
+    },
+    {
+      "name": "extended_ui_state_var",
+      "type": "uint32"
+    },
+    {
+      "name": "extended_ui_state_var_neutral",
+      "type": "uint32"
+    },
+    {
+      "name": "extended_ui_state_var_unk",
+      "type": "uint32"
+    }
+  ],
+  "tableName": "worldstateui"
+}

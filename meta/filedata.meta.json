@@ -1,0 +1,21 @@
+{
+  "file": "FileData.dbc",
+  "primaryKeys": [
+    "id"
+  ],
+  "fields": [
+    {
+      "name": "id",
+      "type": "uint32"
+    },
+    {
+      "name": "file_name",
+      "type": "string"
+    },
+    {
+      "name": "file_path",
+      "type": "string"
+    }
+  ],
+  "tableName": "filedata"
+}

@@ -1,0 +1,57 @@
+{
+  "file": "ObjectEffect.dbc",
+  "primaryKeys": [
+    "id"
+  ],
+  "fields": [
+    {
+      "name": "id",
+      "type": "uint32"
+    },
+    {
+      "name": "name",
+      "type": "string"
+    },
+    {
+      "name": "object_effect_group_id",
+      "type": "int32"
+    },
+    {
+      "name": "trigger_type",
+      "type": "int32"
+    },
+    {
+      "name": "event_type",
+      "type": "int32"
+    },
+    {
+      "name": "effect_rec_type",
+      "type": "int32"
+    },
+    {
+      "name": "effect_rec_id",
+      "type": "int32"
+    },
+    {
+      "name": "attachment",
+      "type": "int32"
+    },
+    {
+      "name": "offset_x",
+      "type": "float"
+    },
+    {
+      "name": "offset_y",
+      "type": "float"
+    },
+    {
+      "name": "offset_z",
+      "type": "float"
+    },
+    {
+      "name": "object_effect_modifier_id",
+      "type": "int32"
+    }
+  ],
+  "tableName": "objecteffect"
+}

@@ -1,17 +1,43 @@
 {
   "file": "SpellVisualEffectName.dbc",
   "tableName": "spellvisualeffectname",
-  "primaryKeys": ["ID"],
+  "primaryKeys": [
+    "id"
+  ],
   "sortOrder": [
-    {"name": "ID", "direction": "ASC"}
+    {
+      "name": "id",
+      "direction": "ASC"
+    }
   ],
   "fields": [
-    {"name": "ID", "type": "uint32"},
-    {"name": "Name", "type": "string"},
-    {"name": "FilePath", "type": "string"},
-    {"name": "AreaEffectSize", "type": "float"},
-    {"name": "Scale", "type": "float"},
-    {"name": "MinAllowedScale", "type": "float"},
-    {"name": "MaxAllowedScale", "type": "float"}
+    {
+      "name": "id",
+      "type": "uint32"
+    },
+    {
+      "name": "name",
+      "type": "string"
+    },
+    {
+      "name": "file_path",
+      "type": "string"
+    },
+    {
+      "name": "area_effect_size",
+      "type": "float"
+    },
+    {
+      "name": "scale",
+      "type": "float"
+    },
+    {
+      "name": "min_allowed_scale",
+      "type": "float"
+    },
+    {
+      "name": "max_allowed_scale",
+      "type": "float"
+    }
   ]
 }

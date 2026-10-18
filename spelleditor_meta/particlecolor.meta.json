@@ -1,0 +1,49 @@
+{
+  "file": "ParticleColor.dbc",
+  "tableName": "particlecolor",
+  "primaryKeys": [
+    "id"
+  ],
+  "fields": [
+    {
+      "name": "id",
+      "type": "uint32"
+    },
+    {
+      "name": "start_1",
+      "type": "uint32"
+    },
+    {
+      "name": "start_2",
+      "type": "uint32"
+    },
+    {
+      "name": "start_3",
+      "type": "uint32"
+    },
+    {
+      "name": "mid_1",
+      "type": "uint32"
+    },
+    {
+      "name": "mid_2",
+      "type": "uint32"
+    },
+    {
+      "name": "mid_3",
+      "type": "uint32"
+    },
+    {
+      "name": "end_1",
+      "type": "uint32"
+    },
+    {
+      "name": "end_2",
+      "type": "uint32"
+    },
+    {
+      "name": "end_3",
+      "type": "uint32"
+    }
+  ]
+}

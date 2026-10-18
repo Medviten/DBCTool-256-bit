@@ -1,11 +1,23 @@
 {
   "file": "SpellIcon.dbc",
-  "primaryKeys": ["id"],
+  "tableName": "spellicon",
+  "primaryKeys": [
+    "id"
+  ],
   "sortOrder": [
-    {"name": "id", "direction": "ASC"}
+    {
+      "name": "id",
+      "direction": "ASC"
+    }
   ],
   "fields": [
-    {"name": "id", "type": "uint32"},
-    {"name": "name", "type": "string"}
+    {
+      "name": "id",
+      "type": "uint32"
+    },
+    {
+      "name": "name",
+      "type": "string"
+    }
   ]
 }

@@ -1,20 +1,55 @@
 {
   "file": "SpellVisualKitModelAttach.dbc",
   "tableName": "spellvisualkitmodelattach",
-  "primaryKeys": ["ID"],
+  "primaryKeys": [
+    "id"
+  ],
   "sortOrder": [
-    {"name": "ID", "direction": "ASC"}
+    {
+      "name": "id",
+      "direction": "ASC"
+    }
   ],
   "fields": [
-    {"name": "ID", "type": "uint32"},
-    {"name": "ParentSpellVisualKitId", "type": "uint32"},
-    {"name": "SpellVisualEffectNameId", "type": "uint32"},
-    {"name": "AttachmentId", "type": "uint32"},
-    {"name": "OffsetX", "type": "float"},
-    {"name": "OffsetY", "type": "float"},
-    {"name": "OffsetZ", "type": "float"},
-    {"name": "Yaw", "type": "float"},
-    {"name": "Pitch", "type": "float"},
-    {"name": "Roll", "type": "float"}
+    {
+      "name": "id",
+      "type": "uint32"
+    },
+    {
+      "name": "parent_spell_visual_kit_id",
+      "type": "uint32"
+    },
+    {
+      "name": "spell_visual_effect_name_id",
+      "type": "uint32"
+    },
+    {
+      "name": "attachment_id",
+      "type": "uint32"
+    },
+    {
+      "name": "offset_x",
+      "type": "float"
+    },
+    {
+      "name": "offset_y",
+      "type": "float"
+    },
+    {
+      "name": "offset_z",
+      "type": "float"
+    },
+    {
+      "name": "yaw",
+      "type": "float"
+    },
+    {
+      "name": "pitch",
+      "type": "float"
+    },
+    {
+      "name": "roll",
+      "type": "float"
+    }
   ]
 }

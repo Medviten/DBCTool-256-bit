@@ -1,0 +1,71 @@
+{
+  "file": "WorldMapContinent.dbc",
+  "primaryKeys": [
+    "id"
+  ],
+  "sortOrder": [
+    {
+      "name": "id",
+      "direction": "ASC"
+    }
+  ],
+  "fields": [
+    {
+      "name": "id",
+      "type": "uint32"
+    },
+    {
+      "name": "map_id",
+      "type": "uint32"
+    },
+    {
+      "name": "left_boundary",
+      "type": "uint32"
+    },
+    {
+      "name": "right_boundary",
+      "type": "uint32"
+    },
+    {
+      "name": "top_boundary",
+      "type": "uint32"
+    },
+    {
+      "name": "bottom_boundary",
+      "type": "uint32"
+    },
+    {
+      "name": "continent_offset_x",
+      "type": "float"
+    },
+    {
+      "name": "continent_offset_y",
+      "type": "float"
+    },
+    {
+      "name": "scale",
+      "type": "float"
+    },
+    {
+      "name": "taxi_min_x",
+      "type": "float"
+    },
+    {
+      "name": "taxi_min_y",
+      "type": "float"
+    },
+    {
+      "name": "taxi_max_x",
+      "type": "float"
+    },
+    {
+      "name": "taxi_max_y",
+      "type": "float"
+    },
+    {
+      "name": "world_map_id",
+      "type": "uint32"
+    }
+  ],
+  "tableName": "worldmapcontinent"
+}

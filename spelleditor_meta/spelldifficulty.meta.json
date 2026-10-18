@@ -1,15 +1,35 @@
 {
   "file": "SpellDifficulty.dbc",
   "tableName": "spelldifficulty",
-  "primaryKeys": ["ID"],
+  "primaryKeys": [
+    "id"
+  ],
   "sortOrder": [
-    {"name": "ID", "direction": "ASC"}
+    {
+      "name": "id",
+      "direction": "ASC"
+    }
   ],
   "fields": [
-    {"name": "ID", "type": "uint32"},
-    {"name": "Difficulties1", "type": "uint32"},
-    {"name": "Difficulties2", "type": "uint32"},
-    {"name": "Difficulties3", "type": "uint32"},
-    {"name": "Difficulties4", "type": "uint32"}
+    {
+      "name": "id",
+      "type": "uint32"
+    },
+    {
+      "name": "difficulties_1",
+      "type": "uint32"
+    },
+    {
+      "name": "difficulties_2",
+      "type": "uint32"
+    },
+    {
+      "name": "difficulties_3",
+      "type": "uint32"
+    },
+    {
+      "name": "difficulties_4",
+      "type": "uint32"
+    }
   ]
 }

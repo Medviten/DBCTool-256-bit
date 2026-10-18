@@ -1,10 +1,19 @@
 {
   "file": "gtChanceToMeleeCrit.dbc",
-  "primaryKeys": ["auto_id"],
+  "primaryKeys": [
+    "auto_id"
+  ],
   "sortOrder": [
-    {"name": "auto_id", "direction": "ASC"}
+    {
+      "name": "auto_id",
+      "direction": "ASC"
+    }
   ],
   "fields": [
-    {"name": "data", "type": "float"}
-  ]
+    {
+      "name": "data",
+      "type": "float"
+    }
+  ],
+  "tableName": "gtchancetomeleecrit"
 }

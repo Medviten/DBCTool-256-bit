@@ -1,0 +1,29 @@
+{
+  "file": "LockType.dbc",
+  "primaryKeys": [
+    "id"
+  ],
+  "fields": [
+    {
+      "name": "id",
+      "type": "uint32"
+    },
+    {
+      "name": "name",
+      "type": "Loc"
+    },
+    {
+      "name": "resource_name",
+      "type": "Loc"
+    },
+    {
+      "name": "verb",
+      "type": "Loc"
+    },
+    {
+      "name": "cursor_name",
+      "type": "string"
+    }
+  ],
+  "tableName": "locktype"
+}

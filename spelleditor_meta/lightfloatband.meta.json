@@ -1,0 +1,145 @@
+{
+  "file": "LightFloatBand.dbc",
+  "tableName": "lightfloatband",
+  "primaryKeys": [
+    "id"
+  ],
+  "fields": [
+    {
+      "name": "id",
+      "type": "uint32"
+    },
+    {
+      "name": "num_entries",
+      "type": "int32"
+    },
+    {
+      "name": "time_value_1",
+      "type": "uint32"
+    },
+    {
+      "name": "time_value_2",
+      "type": "uint32"
+    },
+    {
+      "name": "time_value_3",
+      "type": "uint32"
+    },
+    {
+      "name": "time_value_4",
+      "type": "uint32"
+    },
+    {
+      "name": "time_value_5",
+      "type": "uint32"
+    },
+    {
+      "name": "time_value_6",
+      "type": "uint32"
+    },
+    {
+      "name": "time_value_7",
+      "type": "uint32"
+    },
+    {
+      "name": "time_value_8",
+      "type": "uint32"
+    },
+    {
+      "name": "time_value_9",
+      "type": "uint32"
+    },
+    {
+      "name": "time_value_10",
+      "type": "uint32"
+    },
+    {
+      "name": "time_value_11",
+      "type": "uint32"
+    },
+    {
+      "name": "time_value_12",
+      "type": "uint32"
+    },
+    {
+      "name": "time_value_13",
+      "type": "uint32"
+    },
+    {
+      "name": "time_value_14",
+      "type": "uint32"
+    },
+    {
+      "name": "time_value_15",
+      "type": "uint32"
+    },
+    {
+      "name": "time_value_16",
+      "type": "uint32"
+    },
+    {
+      "name": "float_value_1",
+      "type": "float"
+    },
+    {
+      "name": "float_value_2",
+      "type": "float"
+    },
+    {
+      "name": "float_value_3",
+      "type": "float"
+    },
+    {
+      "name": "float_value_4",
+      "type": "float"
+    },
+    {
+      "name": "float_value_5",
+      "type": "float"
+    },
+    {
+      "name": "float_value_6",
+      "type": "float"
+    },
+    {
+      "name": "float_value_7",
+      "type": "float"
+    },
+    {
+      "name": "float_value_8",
+      "type": "float"
+    },
+    {
+      "name": "float_value_9",
+      "type": "float"
+    },
+    {
+      "name": "float_value_10",
+      "type": "float"
+    },
+    {
+      "name": "float_value_11",
+      "type": "float"
+    },
+    {
+      "name": "float_value_12",
+      "type": "float"
+    },
+    {
+      "name": "float_value_13",
+      "type": "float"
+    },
+    {
+      "name": "float_value_14",
+      "type": "float"
+    },
+    {
+      "name": "float_value_15",
+      "type": "float"
+    },
+    {
+      "name": "float_value_16",
+      "type": "float"
+    }
+  ]
+}

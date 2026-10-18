@@ -1,0 +1,17 @@
+{
+  "file": "Languages.dbc",
+  "primaryKeys": [
+    "id"
+  ],
+  "fields": [
+    {
+      "name": "id",
+      "type": "uint32"
+    },
+    {
+      "name": "name",
+      "type": "Loc"
+    }
+  ],
+  "tableName": "languages"
+}

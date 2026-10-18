@@ -1,0 +1,25 @@
+{
+  "file": "ObjectEffectPackageElem.dbc",
+  "primaryKeys": [
+    "id"
+  ],
+  "fields": [
+    {
+      "name": "id",
+      "type": "uint32"
+    },
+    {
+      "name": "object_effect_package_id",
+      "type": "int32"
+    },
+    {
+      "name": "object_effect_group_id",
+      "type": "int32"
+    },
+    {
+      "name": "state_type",
+      "type": "int32"
+    }
+  ],
+  "tableName": "objecteffectpackageelem"
+}

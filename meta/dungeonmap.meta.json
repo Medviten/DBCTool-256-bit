@@ -1,0 +1,51 @@
+{
+  "file": "DungeonMap.dbc",
+  "primaryKeys": [
+    "id"
+  ],
+  "sortOrder": [
+    {
+      "name": "map_id",
+      "direction": "ASC"
+    },
+    {
+      "name": "floor_index",
+      "direction": "ASC"
+    }
+  ],
+  "fields": [
+    {
+      "name": "id",
+      "type": "uint32"
+    },
+    {
+      "name": "map_id",
+      "type": "uint32"
+    },
+    {
+      "name": "floor_index",
+      "type": "uint32"
+    },
+    {
+      "name": "min_x",
+      "type": "float"
+    },
+    {
+      "name": "min_y",
+      "type": "float"
+    },
+    {
+      "name": "max_x",
+      "type": "float"
+    },
+    {
+      "name": "max_y",
+      "type": "float"
+    },
+    {
+      "name": "parent_world_map_id",
+      "type": "uint32"
+    }
+  ],
+  "tableName": "dungeonmap"
+}

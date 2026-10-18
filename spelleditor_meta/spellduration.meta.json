@@ -1,14 +1,31 @@
 {
   "file": "SpellDuration.dbc",
   "tableName": "spellduration",
-  "primaryKeys": ["ID"],
+  "primaryKeys": [
+    "id"
+  ],
   "sortOrder": [
-    {"name": "ID", "direction": "ASC"}
+    {
+      "name": "id",
+      "direction": "ASC"
+    }
   ],
   "fields": [
-    {"name": "ID", "type": "uint32"},
-    {"name": "BaseDuration", "type": "uint32"},
-    {"name": "PerLevel", "type": "int32"},
-    {"name": "MaximumDuration", "type": "int32"}
+    {
+      "name": "id",
+      "type": "uint32"
+    },
+    {
+      "name": "base_duration",
+      "type": "uint32"
+    },
+    {
+      "name": "per_level",
+      "type": "int32"
+    },
+    {
+      "name": "maximum_duration",
+      "type": "int32"
+    }
   ]
 }

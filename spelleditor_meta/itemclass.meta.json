@@ -1,30 +1,95 @@
 {
   "file": "ItemClass.dbc",
   "tableName": "itemclass",
-  "primaryKeys": ["ID"],
+  "primaryKeys": [
+    "id"
+  ],
   "sortOrder": [
-    {"name": "ID", "direction": "ASC"}
+    {
+      "name": "id",
+      "direction": "ASC"
+    }
   ],
   "fields": [
-    {"name": "ID", "type": "uint32"},
-    {"name": "SecondaryID", "type": "uint32"},
-    {"name": "IsWeapon", "type": "uint32"},
-    {"name": "Name1", "type": "string"},
-    {"name": "Name2", "type": "string"},
-    {"name": "Name3", "type": "string"},
-    {"name": "Name4", "type": "string"},
-    {"name": "Name5", "type": "string"},
-    {"name": "Name6", "type": "string"},
-    {"name": "Name7", "type": "string"},
-    {"name": "Name8", "type": "string"},
-    {"name": "Name9", "type": "string"},
-    {"name": "Name10", "type": "string"},
-    {"name": "Name11", "type": "string"},
-    {"name": "Name12", "type": "string"},
-    {"name": "Name13", "type": "string"},
-    {"name": "Name14", "type": "string"},
-    {"name": "Name15", "type": "string"},
-    {"name": "Name16", "type": "string"},
-    {"name": "Flags", "type": "uint32"}
+    {
+      "name": "id",
+      "type": "uint32"
+    },
+    {
+      "name": "secondary_id",
+      "type": "uint32"
+    },
+    {
+      "name": "is_weapon",
+      "type": "uint32"
+    },
+    {
+      "name": "name_1",
+      "type": "string"
+    },
+    {
+      "name": "name_2",
+      "type": "string"
+    },
+    {
+      "name": "name_3",
+      "type": "string"
+    },
+    {
+      "name": "name_4",
+      "type": "string"
+    },
+    {
+      "name": "name_5",
+      "type": "string"
+    },
+    {
+      "name": "name_6",
+      "type": "string"
+    },
+    {
+      "name": "name_7",
+      "type": "string"
+    },
+    {
+      "name": "name_8",
+      "type": "string"
+    },
+    {
+      "name": "name_9",
+      "type": "string"
+    },
+    {
+      "name": "name_10",
+      "type": "string"
+    },
+    {
+      "name": "name_11",
+      "type": "string"
+    },
+    {
+      "name": "name_12",
+      "type": "string"
+    },
+    {
+      "name": "name_13",
+      "type": "string"
+    },
+    {
+      "name": "name_14",
+      "type": "string"
+    },
+    {
+      "name": "name_15",
+      "type": "string"
+    },
+    {
+      "name": "name_16",
+      "type": "string"
+    },
+    {
+      "name": "flags",
+      "type": "uint32"
+    }
   ]
 }

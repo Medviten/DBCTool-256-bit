@@ -1,0 +1,47 @@
+{
+  "file": "Item.dbc",
+  "tableName": "item",
+  "primaryKeys": [
+    "item_id"
+  ],
+  "sortOrder": [
+    {
+      "name": "item_id",
+      "direction": "ASC"
+    }
+  ],
+  "fields": [
+    {
+      "name": "item_id",
+      "type": "uint32"
+    },
+    {
+      "name": "item_class",
+      "type": "uint32"
+    },
+    {
+      "name": "item_sub_class",
+      "type": "uint32"
+    },
+    {
+      "name": "sound_override_subclassid",
+      "type": "int32"
+    },
+    {
+      "name": "material_id",
+      "type": "int32"
+    },
+    {
+      "name": "item_display_info",
+      "type": "uint32"
+    },
+    {
+      "name": "inventory_slot_id",
+      "type": "uint32"
+    },
+    {
+      "name": "sheath_id",
+      "type": "uint32"
+    }
+  ]
+}

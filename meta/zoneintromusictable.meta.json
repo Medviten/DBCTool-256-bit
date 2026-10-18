@@ -1,0 +1,35 @@
+{
+  "file": "ZoneIntroMusicTable.dbc",
+  "primaryKeys": [
+    "id"
+  ],
+  "sortOrder": [
+    {
+      "name": "id",
+      "direction": "ASC"
+    }
+  ],
+  "fields": [
+    {
+      "name": "id",
+      "type": "uint32"
+    },
+    {
+      "name": "name",
+      "type": "string"
+    },
+    {
+      "name": "sound_id",
+      "type": "uint32"
+    },
+    {
+      "name": "priority",
+      "type": "uint32"
+    },
+    {
+      "name": "min_delay_minutes",
+      "type": "uint32"
+    }
+  ],
+  "tableName": "zoneintromusictable"
+}

@@ -1,0 +1,261 @@
+{
+  "file": "WorldStateUI.dbc",
+  "tableName": "worldstateui",
+  "primaryKeys": [
+    "id"
+  ],
+  "fields": [
+    {
+      "name": "id",
+      "type": "uint32"
+    },
+    {
+      "name": "map_id",
+      "type": "uint32"
+    },
+    {
+      "name": "area_id",
+      "type": "uint32"
+    },
+    {
+      "name": "phase_shift",
+      "type": "uint32"
+    },
+    {
+      "name": "icon",
+      "type": "string"
+    },
+    {
+      "name": "text_1",
+      "type": "string"
+    },
+    {
+      "name": "text_2",
+      "type": "string"
+    },
+    {
+      "name": "text_3",
+      "type": "string"
+    },
+    {
+      "name": "text_4",
+      "type": "string"
+    },
+    {
+      "name": "text_5",
+      "type": "string"
+    },
+    {
+      "name": "text_6",
+      "type": "string"
+    },
+    {
+      "name": "text_7",
+      "type": "string"
+    },
+    {
+      "name": "text_8",
+      "type": "string"
+    },
+    {
+      "name": "text_9",
+      "type": "string"
+    },
+    {
+      "name": "text_10",
+      "type": "string"
+    },
+    {
+      "name": "text_11",
+      "type": "string"
+    },
+    {
+      "name": "text_12",
+      "type": "string"
+    },
+    {
+      "name": "text_13",
+      "type": "string"
+    },
+    {
+      "name": "text_14",
+      "type": "string"
+    },
+    {
+      "name": "text_15",
+      "type": "string"
+    },
+    {
+      "name": "text_16",
+      "type": "string"
+    },
+    {
+      "name": "text_flags",
+      "type": "uint32"
+    },
+    {
+      "name": "tooltip_1",
+      "type": "string"
+    },
+    {
+      "name": "tooltip_2",
+      "type": "string"
+    },
+    {
+      "name": "tooltip_3",
+      "type": "string"
+    },
+    {
+      "name": "tooltip_4",
+      "type": "string"
+    },
+    {
+      "name": "tooltip_5",
+      "type": "string"
+    },
+    {
+      "name": "tooltip_6",
+      "type": "string"
+    },
+    {
+      "name": "tooltip_7",
+      "type": "string"
+    },
+    {
+      "name": "tooltip_8",
+      "type": "string"
+    },
+    {
+      "name": "tooltip_9",
+      "type": "string"
+    },
+    {
+      "name": "tooltip_10",
+      "type": "string"
+    },
+    {
+      "name": "tooltip_11",
+      "type": "string"
+    },
+    {
+      "name": "tooltip_12",
+      "type": "string"
+    },
+    {
+      "name": "tooltip_13",
+      "type": "string"
+    },
+    {
+      "name": "tooltip_14",
+      "type": "string"
+    },
+    {
+      "name": "tooltip_15",
+      "type": "string"
+    },
+    {
+      "name": "tooltip_16",
+      "type": "string"
+    },
+    {
+      "name": "tooltip_flags",
+      "type": "uint32"
+    },
+    {
+      "name": "world_state",
+      "type": "int32"
+    },
+    {
+      "name": "type",
+      "type": "int32"
+    },
+    {
+      "name": "dynamic_icon",
+      "type": "string"
+    },
+    {
+      "name": "dynamic_tooltip_1",
+      "type": "string"
+    },
+    {
+      "name": "dynamic_tooltip_2",
+      "type": "string"
+    },
+    {
+      "name": "dynamic_tooltip_3",
+      "type": "string"
+    },
+    {
+      "name": "dynamic_tooltip_4",
+      "type": "string"
+    },
+    {
+      "name": "dynamic_tooltip_5",
+      "type": "string"
+    },
+    {
+      "name": "dynamic_tooltip_6",
+      "type": "string"
+    },
+    {
+      "name": "dynamic_tooltip_7",
+      "type": "string"
+    },
+    {
+      "name": "dynamic_tooltip_8",
+      "type": "string"
+    },
+    {
+      "name": "dynamic_tooltip_9",
+      "type": "string"
+    },
+    {
+      "name": "dynamic_tooltip_10",
+      "type": "string"
+    },
+    {
+      "name": "dynamic_tooltip_11",
+      "type": "string"
+    },
+    {
+      "name": "dynamic_tooltip_12",
+      "type": "string"
+    },
+    {
+      "name": "dynamic_tooltip_13",
+      "type": "string"
+    },
+    {
+      "name": "dynamic_tooltip_14",
+      "type": "string"
+    },
+    {
+      "name": "dynamic_tooltip_15",
+      "type": "string"
+    },
+    {
+      "name": "dynamic_tooltip_16",
+      "type": "string"
+    },
+    {
+      "name": "dynamic_tooltip_flags",
+      "type": "uint32"
+    },
+    {
+      "name": "extended_ui",
+      "type": "string"
+    },
+    {
+      "name": "extended_ui_state_var",
+      "type": "uint32"
+    },
+    {
+      "name": "extended_ui_state_var_neutral",
+      "type": "uint32"
+    },
+    {
+      "name": "extended_ui_state_var_unk_1",
+      "type": "uint32"
+    }
+  ]
+}

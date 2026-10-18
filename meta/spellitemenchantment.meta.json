@@ -1,0 +1,69 @@
+{
+  "file": "SpellItemEnchantment.dbc",
+  "primaryKeys": [
+    "id"
+  ],
+  "fields": [
+    {
+      "name": "id",
+      "type": "uint32"
+    },
+    {
+      "name": "charges",
+      "type": "uint32"
+    },
+    {
+      "name": "spell_dispel_type",
+      "type": "uint32",
+      "count": 3
+    },
+    {
+      "name": "min_amount",
+      "type": "uint32",
+      "count": 3
+    },
+    {
+      "name": "max_amount",
+      "type": "uint32",
+      "count": 3
+    },
+    {
+      "name": "object_id",
+      "type": "uint32",
+      "count": 3
+    },
+    {
+      "name": "s_ref_name",
+      "type": "Loc"
+    },
+    {
+      "name": "item_visuals",
+      "type": "uint32"
+    },
+    {
+      "name": "flags",
+      "type": "uint32"
+    },
+    {
+      "name": "item_cache",
+      "type": "uint32"
+    },
+    {
+      "name": "spell_item_enchantment_condition",
+      "type": "uint32"
+    },
+    {
+      "name": "skill_line",
+      "type": "uint32"
+    },
+    {
+      "name": "skill_level",
+      "type": "uint32"
+    },
+    {
+      "name": "required_level",
+      "type": "uint32"
+    }
+  ],
+  "tableName": "spellitemenchantment"
+}

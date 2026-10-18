@@ -1,0 +1,25 @@
+{
+  "file": "GlyphProperties.dbc",
+  "primaryKeys": [
+    "id"
+  ],
+  "fields": [
+    {
+      "name": "id",
+      "type": "uint32"
+    },
+    {
+      "name": "spell_id",
+      "type": "uint32"
+    },
+    {
+      "name": "glyph_slot_flags",
+      "type": "uint32"
+    },
+    {
+      "name": "spell_icon_id",
+      "type": "uint32"
+    }
+  ],
+  "tableName": "glyphproperties"
+}

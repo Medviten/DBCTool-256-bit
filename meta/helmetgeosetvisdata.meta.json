@@ -1,0 +1,24 @@
+{
+  "file": "HelmetGeosetVisData.dbc",
+  "primaryKeys": [
+    "id"
+  ],
+  "sortOrder": [
+    {
+      "name": "id",
+      "direction": "ASC"
+    }
+  ],
+  "fields": [
+    {
+      "name": "id",
+      "type": "uint32"
+    },
+    {
+      "name": "hide_geoset",
+      "type": "uint32",
+      "count": 7
+    }
+  ],
+  "tableName": "helmetgeosetvisdata"
+}

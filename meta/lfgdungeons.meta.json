@@ -1,0 +1,77 @@
+{
+  "file": "LFGDungeons.dbc",
+  "primaryKeys": [
+    "id"
+  ],
+  "fields": [
+    {
+      "name": "id",
+      "type": "uint32"
+    },
+    {
+      "name": "name",
+      "type": "Loc"
+    },
+    {
+      "name": "min_level",
+      "type": "uint32"
+    },
+    {
+      "name": "max_level",
+      "type": "uint32"
+    },
+    {
+      "name": "target_level",
+      "type": "uint32"
+    },
+    {
+      "name": "target_level_min",
+      "type": "uint32"
+    },
+    {
+      "name": "target_level_max",
+      "type": "uint32"
+    },
+    {
+      "name": "map_id",
+      "type": "uint32"
+    },
+    {
+      "name": "difficulty",
+      "type": "uint32"
+    },
+    {
+      "name": "flags",
+      "type": "uint32"
+    },
+    {
+      "name": "type_id",
+      "type": "uint32"
+    },
+    {
+      "name": "faction",
+      "type": "int32"
+    },
+    {
+      "name": "texture",
+      "type": "string"
+    },
+    {
+      "name": "expansion",
+      "type": "uint32"
+    },
+    {
+      "name": "order_id",
+      "type": "uint32"
+    },
+    {
+      "name": "group_id",
+      "type": "uint32"
+    },
+    {
+      "name": "tooltip",
+      "type": "Loc"
+    }
+  ],
+  "tableName": "lfgdungeons"
+}

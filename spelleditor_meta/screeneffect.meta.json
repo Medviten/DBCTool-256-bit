@@ -1,0 +1,49 @@
+{
+  "file": "ScreenEffect.dbc",
+  "tableName": "screeneffect",
+  "primaryKeys": [
+    "id"
+  ],
+  "fields": [
+    {
+      "name": "id",
+      "type": "uint32"
+    },
+    {
+      "name": "name",
+      "type": "string"
+    },
+    {
+      "name": "type",
+      "type": "uint32"
+    },
+    {
+      "name": "colour",
+      "type": "uint32"
+    },
+    {
+      "name": "screen_edge_size",
+      "type": "uint32"
+    },
+    {
+      "name": "black_white_value",
+      "type": "uint32"
+    },
+    {
+      "name": "unknown",
+      "type": "uint32"
+    },
+    {
+      "name": "light_id",
+      "type": "int32"
+    },
+    {
+      "name": "sound_ambience_id",
+      "type": "uint32"
+    },
+    {
+      "name": "sound_music_id",
+      "type": "uint32"
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "file": "ZoneMusic.dbc",
+  "primaryKeys": [
+    "id"
+  ],
+  "fields": [
+    {
+      "name": "id",
+      "type": "uint32"
+    },
+    {
+      "name": "name",
+      "type": "string"
+    },
+    {
+      "name": "silence_min_day",
+      "type": "uint32"
+    },
+    {
+      "name": "silence_min_night",
+      "type": "uint32"
+    },
+    {
+      "name": "silence_max_day",
+      "type": "uint32"
+    },
+    {
+      "name": "silence_max_night",
+      "type": "uint32"
+    },
+    {
+      "name": "day_music",
+      "type": "uint32"
+    },
+    {
+      "name": "night_music",
+      "type": "uint32"
+    }
+  ],
+  "tableName": "zonemusic"
+}

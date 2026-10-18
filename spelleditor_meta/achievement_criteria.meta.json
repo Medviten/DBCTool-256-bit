@@ -1,0 +1,139 @@
+{
+  "file": "Achievement_Criteria.dbc",
+  "tableName": "achievement_criteria",
+  "primaryKeys": [
+    "id"
+  ],
+  "sortOrder": [
+    {
+      "name": "id",
+      "direction": "ASC"
+    }
+  ],
+  "fields": [
+    {
+      "name": "id",
+      "type": "uint32"
+    },
+    {
+      "name": "referred_achievement",
+      "type": "uint32"
+    },
+    {
+      "name": "required_type",
+      "type": "uint32"
+    },
+    {
+      "name": "asset_type",
+      "type": "uint32"
+    },
+    {
+      "name": "asset_count",
+      "type": "uint32"
+    },
+    {
+      "name": "start_event",
+      "type": "uint32"
+    },
+    {
+      "name": "start_asset",
+      "type": "uint32"
+    },
+    {
+      "name": "fail_event",
+      "type": "uint32"
+    },
+    {
+      "name": "fail_asset",
+      "type": "uint32"
+    },
+    {
+      "name": "name_1",
+      "type": "string"
+    },
+    {
+      "name": "name_2",
+      "type": "string"
+    },
+    {
+      "name": "name_3",
+      "type": "string"
+    },
+    {
+      "name": "name_4",
+      "type": "string"
+    },
+    {
+      "name": "name_5",
+      "type": "string"
+    },
+    {
+      "name": "name_6",
+      "type": "string"
+    },
+    {
+      "name": "name_7",
+      "type": "string"
+    },
+    {
+      "name": "name_8",
+      "type": "string"
+    },
+    {
+      "name": "name_9",
+      "type": "string"
+    },
+    {
+      "name": "name_10",
+      "type": "string"
+    },
+    {
+      "name": "name_11",
+      "type": "string"
+    },
+    {
+      "name": "name_12",
+      "type": "string"
+    },
+    {
+      "name": "name_13",
+      "type": "string"
+    },
+    {
+      "name": "name_14",
+      "type": "string"
+    },
+    {
+      "name": "name_15",
+      "type": "string"
+    },
+    {
+      "name": "name_16",
+      "type": "string"
+    },
+    {
+      "name": "name_flags",
+      "type": "uint32"
+    },
+    {
+      "name": "flags",
+      "type": "uint32"
+    },
+    {
+      "name": "timed_type",
+      "type": "uint32"
+    },
+    {
+      "name": "timer_start_event",
+      "type": "uint32"
+    },
+    {
+      "name": "time_limit",
+      "type": "uint32"
+    },
+    {
+      "name": "show_order",
+      "type": "uint32"
+    }
+  ]
+}

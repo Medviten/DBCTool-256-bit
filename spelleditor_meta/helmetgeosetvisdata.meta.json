@@ -1,0 +1,47 @@
+{
+  "file": "HelmetGeosetVisData.dbc",
+  "tableName": "helmetgeosetvisdata",
+  "primaryKeys": [
+    "id"
+  ],
+  "sortOrder": [
+    {
+      "name": "id",
+      "direction": "ASC"
+    }
+  ],
+  "fields": [
+    {
+      "name": "id",
+      "type": "uint32"
+    },
+    {
+      "name": "hide_geoset_1",
+      "type": "uint32"
+    },
+    {
+      "name": "hide_geoset_2",
+      "type": "uint32"
+    },
+    {
+      "name": "hide_geoset_3",
+      "type": "uint32"
+    },
+    {
+      "name": "hide_geoset_4",
+      "type": "uint32"
+    },
+    {
+      "name": "hide_geoset_5",
+      "type": "uint32"
+    },
+    {
+      "name": "hide_geoset_6",
+      "type": "uint32"
+    },
+    {
+      "name": "hide_geoset_7",
+      "type": "uint32"
+    }
+  ]
+}

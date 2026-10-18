@@ -1,12 +1,27 @@
 {
   "file": "SpellVisualPrecastTransitions.dbc",
-  "primaryKeys": ["id"],
+  "primaryKeys": [
+    "id"
+  ],
   "sortOrder": [
-    {"name": "id", "direction": "ASC"}
+    {
+      "name": "id",
+      "direction": "ASC"
+    }
   ],
   "fields": [
-    {"name": "id", "type": "uint32"},
-    {"name": "precast_load_anim_name", "type": "string"},
-    {"name": "precast_hold_anim_name", "type": "string"}
-  ]
+    {
+      "name": "id",
+      "type": "uint32"
+    },
+    {
+      "name": "precast_load_anim_name",
+      "type": "string"
+    },
+    {
+      "name": "precast_hold_anim_name",
+      "type": "string"
+    }
+  ],
+  "tableName": "spellvisualprecasttransitions"
 }

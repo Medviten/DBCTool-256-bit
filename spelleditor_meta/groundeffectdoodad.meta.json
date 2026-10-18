@@ -1,0 +1,27 @@
+{
+  "file": "GroundEffectDoodad.dbc",
+  "tableName": "groundeffectdoodad",
+  "primaryKeys": [
+    "id"
+  ],
+  "sortOrder": [
+    {
+      "name": "id",
+      "direction": "ASC"
+    }
+  ],
+  "fields": [
+    {
+      "name": "id",
+      "type": "uint32"
+    },
+    {
+      "name": "internal_id",
+      "type": "uint32"
+    },
+    {
+      "name": "model_path",
+      "type": "string"
+    }
+  ]
+}

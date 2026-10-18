@@ -1,0 +1,59 @@
+{
+  "file": "GroundEffectTexture.dbc",
+  "tableName": "groundeffecttexture",
+  "primaryKeys": [
+    "id"
+  ],
+  "sortOrder": [
+    {
+      "name": "id",
+      "direction": "ASC"
+    }
+  ],
+  "fields": [
+    {
+      "name": "id",
+      "type": "uint32"
+    },
+    {
+      "name": "doodad_id_1",
+      "type": "uint32"
+    },
+    {
+      "name": "doodad_id_2",
+      "type": "uint32"
+    },
+    {
+      "name": "doodad_id_3",
+      "type": "uint32"
+    },
+    {
+      "name": "doodad_id_4",
+      "type": "uint32"
+    },
+    {
+      "name": "doodad_weight_1",
+      "type": "int32"
+    },
+    {
+      "name": "doodad_weight_2",
+      "type": "int32"
+    },
+    {
+      "name": "doodad_weight_3",
+      "type": "int32"
+    },
+    {
+      "name": "doodad_weight_4",
+      "type": "int32"
+    },
+    {
+      "name": "density",
+      "type": "uint32"
+    },
+    {
+      "name": "terrain_type_id",
+      "type": "uint32"
+    }
+  ]
+}

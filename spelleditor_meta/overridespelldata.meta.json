@@ -1,0 +1,57 @@
+{
+  "file": "OverrideSpellData.dbc",
+  "tableName": "overridespelldata",
+  "primaryKeys": [
+    "id"
+  ],
+  "fields": [
+    {
+      "name": "id",
+      "type": "uint32"
+    },
+    {
+      "name": "spellid_1",
+      "type": "uint32"
+    },
+    {
+      "name": "spellid_2",
+      "type": "uint32"
+    },
+    {
+      "name": "spellid_3",
+      "type": "uint32"
+    },
+    {
+      "name": "spellid_4",
+      "type": "uint32"
+    },
+    {
+      "name": "spellid_5",
+      "type": "uint32"
+    },
+    {
+      "name": "spellid_6",
+      "type": "uint32"
+    },
+    {
+      "name": "spellid_7",
+      "type": "uint32"
+    },
+    {
+      "name": "spellid_8",
+      "type": "uint32"
+    },
+    {
+      "name": "spellid_9",
+      "type": "uint32"
+    },
+    {
+      "name": "spellid_10",
+      "type": "uint32"
+    },
+    {
+      "name": "flags",
+      "type": "uint32"
+    }
+  ]
+}

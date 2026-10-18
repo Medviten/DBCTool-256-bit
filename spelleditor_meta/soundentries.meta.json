@@ -1,0 +1,135 @@
+{
+  "file": "SoundEntries.dbc",
+  "tableName": "soundentries",
+  "primaryKeys": [
+    "id"
+  ],
+  "sortOrder": [
+    {
+      "name": "id",
+      "direction": "ASC"
+    }
+  ],
+  "fields": [
+    {
+      "name": "id",
+      "type": "uint32"
+    },
+    {
+      "name": "sound_type",
+      "type": "uint32"
+    },
+    {
+      "name": "sound_name",
+      "type": "string"
+    },
+    {
+      "name": "name_1",
+      "type": "string"
+    },
+    {
+      "name": "name_2",
+      "type": "string"
+    },
+    {
+      "name": "name_3",
+      "type": "string"
+    },
+    {
+      "name": "name_4",
+      "type": "string"
+    },
+    {
+      "name": "name_5",
+      "type": "string"
+    },
+    {
+      "name": "name_6",
+      "type": "string"
+    },
+    {
+      "name": "name_7",
+      "type": "string"
+    },
+    {
+      "name": "name_8",
+      "type": "string"
+    },
+    {
+      "name": "name_9",
+      "type": "string"
+    },
+    {
+      "name": "name_10",
+      "type": "string"
+    },
+    {
+      "name": "freq_1",
+      "type": "uint32"
+    },
+    {
+      "name": "freq_2",
+      "type": "uint32"
+    },
+    {
+      "name": "freq_3",
+      "type": "uint32"
+    },
+    {
+      "name": "freq_4",
+      "type": "uint32"
+    },
+    {
+      "name": "freq_5",
+      "type": "uint32"
+    },
+    {
+      "name": "freq_6",
+      "type": "uint32"
+    },
+    {
+      "name": "freq_7",
+      "type": "uint32"
+    },
+    {
+      "name": "freq_8",
+      "type": "uint32"
+    },
+    {
+      "name": "freq_9",
+      "type": "uint32"
+    },
+    {
+      "name": "freq_10",
+      "type": "uint32"
+    },
+    {
+      "name": "file_path",
+      "type": "string"
+    },
+    {
+      "name": "volume",
+      "type": "float"
+    },
+    {
+      "name": "flags",
+      "type": "uint32"
+    },
+    {
+      "name": "min_distance",
+      "type": "float"
+    },
+    {
+      "name": "max_distance",
+      "type": "float"
+    },
+    {
+      "name": "eaxdef",
+      "type": "uint32"
+    },
+    {
+      "name": "sound_entries_advanced_id",
+      "type": "uint32"
+    }
+  ]
+}
