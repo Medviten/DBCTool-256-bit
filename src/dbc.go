@@ -31,7 +31,7 @@ type SortField struct {
 
 type FieldMeta struct {
     Name  string `json:"name"`
-    Type  string `json:"type"` // int32, uint32, float, string, Loc
+    Type  string `json:"type"` // int32, uint32, uint8, float, string, Loc, racemask
     Count uint32 `json:"count,omitempty"`
 }
 
@@ -116,6 +116,9 @@ func ParseHeader(data []byte) (DBCHeader, error) {
 
 // ParseRecords reads all records into memory
 func ParseRecords(data []byte, start int, header DBCHeader, meta MetaFile, stringBlock []byte) ([]Record, error) {
+    // stock DBCs store race masks as a single uint32, files written by this tool as 256 bits
+    legacyRaceMasks := false
+
     // helper to get size in bytes of a single field type element
     sizeOf := func(typ string) (int, error) {
         switch typ {
@@ -125,23 +128,46 @@ func ParseRecords(data []byte, start int, header DBCHeader, meta MetaFile, strin
             return 1, nil
         case "Loc":
             return 17 * 4, nil
+        case "racemask":
+            if legacyRaceMasks {
+                return legacyRaceMaskDBCSize, nil
+            }
+            return raceMaskDBCSize, nil
         default:
             return 0, fmt.Errorf("unknown field type: %s", typ)
         }
     }
 
     // compute expected record size from meta
-    expectedRecordSize := 0
-    for _, field := range meta.Fields {
-        elemSize, err := sizeOf(field.Type)
-        if err != nil {
-            return nil, err
+    recordSize := func() (int, error) {
+        size := 0
+        for _, field := range meta.Fields {
+            elemSize, err := sizeOf(field.Type)
+            if err != nil {
+                return 0, err
+            }
+            repeat := int(field.Count)
+            if repeat == 0 {
+                repeat = 1
+            }
+            size += elemSize * repeat
         }
-        repeat := int(field.Count)
-        if repeat == 0 {
-            repeat = 1
+        return size, nil
+    }
+
+    expectedRecordSize, err := recordSize()
+    if err != nil {
+        return nil, err
+    }
+
+    // a stock DBC is smaller by 28 bytes per race mask: read it with 32-bit race masks instead
+    if uint32(expectedRecordSize) != header.RecordSize {
+        legacyRaceMasks = true
+        if legacySize, _ := recordSize(); legacySize != expectedRecordSize && uint32(legacySize) == header.RecordSize {
+            expectedRecordSize = legacySize
+        } else {
+            legacyRaceMasks = false
         }
-        expectedRecordSize += elemSize * repeat
     }
 
     // quick validation against header.RecordSize
@@ -220,6 +246,14 @@ func ParseRecords(data []byte, start int, header DBCHeader, meta MetaFile, strin
                         offset += 4
                     }
                     rec[name] = loc
+
+                case "racemask":
+                    if legacyRaceMasks {
+                        rec[name] = readLegacyRaceMask(data[recordOffset+offset:])
+                    } else {
+                        rec[name] = readRaceMask(data[recordOffset+offset:])
+                    }
+                    offset += elemSize
 
                 default:
                     return nil, fmt.Errorf("unknown field type: %s", field.Type)
@@ -346,6 +380,9 @@ func WriteDBC(dbc *DBCFile, meta *MetaFile, outPath string) error {
                         binary.LittleEndian.PutUint32(recordData[offset:offset+4], v)
                         offset += 4
                     }
+                case "racemask":
+                    putRaceMask(recordData[offset:offset+raceMaskDBCSize], rec[name].(RaceMask))
+                    offset += raceMaskDBCSize
                 }
             }
         }
@@ -409,6 +446,8 @@ func PrintRecord(rec Record, meta *MetaFile, stringBlock []byte) {
                         fmt.Printf("  %s_flags: %v\n", name, locArr[i])
                     }
                 }
+            case "racemask":
+                fmt.Printf("  %s: %s\n", name, val.(RaceMask))
             default:
                 fmt.Printf("  %s: %v\n", name, val)
             }

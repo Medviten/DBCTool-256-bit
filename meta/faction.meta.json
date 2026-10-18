@@ -20,7 +20,7 @@
     },
     {
       "name": "reputation_race_mask",
-      "type": "int32",
+      "type": "racemask",
       "count": 4
     },
     {

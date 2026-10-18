@@ -24,7 +24,7 @@
     },
     {
       "name": "race_mask",
-      "type": "uint32"
+      "type": "racemask"
     },
     {
       "name": "class_mask",

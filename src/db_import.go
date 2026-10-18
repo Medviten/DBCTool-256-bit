@@ -198,6 +198,10 @@ func createTable(db *sql.DB, tableName string, meta *MetaFile) error {
                         columns = append(columns, fmt.Sprintf("`%s` TEXT", locCol))
                     }
                 }
+            case "racemask":
+                for _, wordCol := range raceMaskColumns(colName) {
+                    columns = append(columns, fmt.Sprintf("`%s` BIGINT UNSIGNED NOT NULL DEFAULT 0", wordCol))
+                }
             default:
                 return fmt.Errorf("unknown field type: %s", field.Type)
             }
@@ -283,6 +287,10 @@ func insertRecords(db *sql.DB, tableName string, dbc *DBCFile, meta *MetaFile) e
                 for _, lang := range locLangs {
                     columnsBase = append(columnsBase, fmt.Sprintf("`%s_%s`", colName, lang))
                 }
+            case "racemask":
+                for _, wordCol := range raceMaskColumns(colName) {
+                    columnsBase = append(columnsBase, fmt.Sprintf("`%s`", wordCol))
+                }
             }
         }
     }
@@ -342,6 +350,11 @@ func insertRecords(db *sql.DB, tableName string, dbc *DBCFile, meta *MetaFile) e
                                 allValues = append(allValues, nil) // extra unused
                             }
                             rowPlaceholders = append(rowPlaceholders, "?")
+                        }
+                    case "racemask":
+                        for _, word := range rec[name].(RaceMask) {
+                            rowPlaceholders = append(rowPlaceholders, "?")
+                            allValues = append(allValues, word)
                         }
                     }
                 }

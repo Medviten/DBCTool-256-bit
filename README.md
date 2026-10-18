@@ -162,6 +162,26 @@ Example:
 }
 ```
 
+### 256-bit race masks
+
+The `racemask` type holds a 256-bit race mask (bit `race - 1` per race,
+races 1-255). It is used by `Faction.dbc` (`reputation_race_mask`, count 4),
+`SkillLineAbility.dbc` (`required_races`), `SkillRaceClassInfo.dbc` and
+`TalentTab.dbc` (`race_mask`).
+
+-   **DBC**: 32 bytes per mask, 8 little-endian `uint32` fields, races 1-32
+    first. `export` always writes this layout. `import` also accepts stock
+    3.3.5 DBCs, where the mask is a single `uint32`, and widens them.
+-   **SQL**: four `BIGINT UNSIGNED` columns. The field's own name holds
+    races 1-64, followed by `<name>_2` (65-128), `<name>_3` (129-192) and
+    `<name>_4` (193-256). With `count`, each element gets its own four, e.g.
+    `reputation_race_mask_1`, `reputation_race_mask_1_2`, ...
+
+Because each column is a plain integer, SQL bitwise math keeps working for
+races 1-64, e.g. ``SET `race_mask` = `race_mask` | (1 << (@Race - 1))``.
+For a race above 64, update the word that holds it, e.g. race 70 is bit
+`(70 - 1) % 64` of `race_mask_2`.
+
 ------------------------------------------------------------------------
 
 ## 📜 License

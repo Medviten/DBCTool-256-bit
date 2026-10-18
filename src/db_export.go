@@ -138,6 +138,12 @@ func ExportDBC(db *sql.DB, cfg *Config, metaPath string) error {
                     }
                     loc[16] = toUint32(raw, cols, fmt.Sprintf("%s_flags", name))
                     rec[name] = loc
+                case "racemask":
+                    var mask RaceMask
+                    for w, wordCol := range raceMaskColumns(name) {
+                        mask[w] = toUint64(raw, cols, wordCol)
+                    }
+                    rec[name] = mask
                 }
             }
         }
@@ -210,6 +216,8 @@ func calculateRecordSize(meta MetaFile) uint32 {
                 size += 1
             case "Loc":
                 size += 4 * 17
+            case "racemask":
+                size += raceMaskDBCSize
             }
         }
     }
@@ -225,9 +233,12 @@ func calculateFieldCount(meta MetaFile) uint32 {
         }
 
         for j := 0; j < repeat; j++ {
-            if f.Type == "Loc" {
+            switch f.Type {
+            case "Loc":
                 count += 17
-            } else {
+            case "racemask":
+                count += raceMaskDBCFields
+            default:
                 count++
             }
         }
