@@ -16,7 +16,7 @@
     },
     {
       "name": "hide_geoset",
-      "type": "uint32",
+      "type": "racemask",
       "count": 7
     }
   ],

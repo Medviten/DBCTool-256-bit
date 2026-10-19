@@ -167,7 +167,9 @@ Example:
 The `racemask` type holds a 256-bit race mask (bit `race - 1` per race,
 races 1-255). It is used by `Faction.dbc` (`reputation_race_mask`, count 4),
 `SkillLineAbility.dbc` (`required_races`), `SkillRaceClassInfo.dbc` and
-`TalentTab.dbc` (`race_mask`).
+`TalentTab.dbc` (`race_mask`). `HelmetGeosetVisData.dbc` (`hide_geoset`, count 7)
+uses the same type, but its bits are indexed by race ID itself (bit `race`, not
+`race - 1`), as in the stock file.
 
 -   **DBC**: 32 bytes per mask, 8 little-endian `uint32` fields, races 1-32
     first. `export` always writes this layout. `import` also accepts stock
