@@ -8,13 +8,14 @@ package main
 import (
     "encoding/binary"
     "fmt"
+    "log"
     "strconv"
 )
 
 // RaceMask is a 256-bit race mask, bit (race - 1) set per race, stored as four 64-bit words (races 1-64 first).
 //
 // In a DBC file it takes 32 bytes: 8 little-endian uint32 fields. Stock 3.3.5 DBCs hold a single uint32,
-// which LoadDBC still reads. In SQL it is four BIGINT UNSIGNED columns: the field's own name holds races 1-64,
+// which LoadDBC still reads and export writes with race_mask_bits = 32. In SQL it is four BIGINT UNSIGNED columns: the field's own name holds races 1-64,
 // followed by <name>_2, <name>_3 and <name>_4, so SQL bitwise math keeps working on each column.
 type RaceMask [raceMaskWords]uint64
 
@@ -24,6 +25,73 @@ const (
     raceMaskDBCSize       = raceMaskDBCFields * 4
     legacyRaceMaskDBCSize = 4
 )
+
+// raceMaskBits is the layout export writes and import creates tables with: 256 (8 DBC fields, four BIGINT UNSIGNED
+// columns) or 32 (the stock single field and signed INT column, races 1-32 only). Reading a DBC accepts both
+// layouts whatever this is. Set from options.race_mask_bits or --race-mask-bits.
+var raceMaskBits = 256
+
+// setRaceMaskBits validates and applies a race mask layout; 0 keeps the current one.
+func setRaceMaskBits(bits int) error {
+    switch bits {
+    case 0:
+        return nil
+    case 32, 256:
+        raceMaskBits = bits
+        return nil
+    }
+    return fmt.Errorf("race mask bits must be 32 or 256, got %d", bits)
+}
+
+// raceMaskOutFields and raceMaskOutSize give the DBC layout export writes.
+func raceMaskOutFields() int {
+    if raceMaskBits == 32 {
+        return 1
+    }
+    return raceMaskDBCFields
+}
+
+func raceMaskOutSize() int {
+    return raceMaskOutFields() * 4
+}
+
+// raceMaskSQLColumns returns the SQL columns of one race mask element in the current layout.
+func raceMaskSQLColumns(name string) []string {
+    if raceMaskBits == 32 {
+        return []string{name}
+    }
+    return raceMaskColumns(name)
+}
+
+// fitsLegacy reports whether the mask has no bits above race 32.
+func (m RaceMask) fitsLegacy() bool {
+    return m[0]>>32 == 0 && m[1] == 0 && m[2] == 0 && m[3] == 0
+}
+
+// legacyValue returns races 1-32 as the signed value of a stock INT column.
+func (m RaceMask) legacyValue() int32 {
+    return int32(uint32(m[0]))
+}
+
+// raceMask32ChecksumSalt is mixed into the export checksum of tables with race masks in the 32-bit layout.
+const raceMask32ChecksumSalt = 0x52414345_4d534b33 // "RACEMSK3"
+
+// metaHasRaceMask reports whether a meta has any racemask field.
+func metaHasRaceMask(meta MetaFile) bool {
+    for _, f := range meta.Fields {
+        if f.Type == "racemask" {
+            return true
+        }
+    }
+    return false
+}
+
+// warnTruncated reports masks that lost races above 32 when written in the 32-bit layout.
+func warnTruncated(what string, count int) {
+    if count > 0 {
+        log.Printf("WARNING: %s: %d race mask(s) had races above 32, dropped by race_mask_bits = 32", what, count)
+    }
+}
 
 // raceMaskColumns returns the SQL column names of one race mask element, lowest races first.
 func raceMaskColumns(name string) []string {
@@ -49,6 +117,15 @@ func readRaceMask(data []byte) RaceMask {
 // readLegacyRaceMask reads a 4-byte race mask (races 1-32) from a stock DBC record.
 func readLegacyRaceMask(data []byte) RaceMask {
     return RaceMask{uint64(binary.LittleEndian.Uint32(data[0:4]))}
+}
+
+// putRaceMaskOut writes a race mask in the layout export writes (raceMaskOutSize bytes).
+func putRaceMaskOut(buf []byte, mask RaceMask) {
+    if raceMaskBits == 32 {
+        binary.LittleEndian.PutUint32(buf[0:4], uint32(mask[0]))
+        return
+    }
+    putRaceMask(buf, mask)
 }
 
 // putRaceMask writes a race mask as 8 little-endian uint32 fields into buf (32 bytes).

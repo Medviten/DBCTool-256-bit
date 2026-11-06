@@ -199,6 +199,11 @@ func createTable(db *sql.DB, tableName string, meta *MetaFile) error {
                     }
                 }
             case "racemask":
+                if raceMaskBits == 32 {
+                    // the stock schema, as for int32
+                    columns = append(columns, fmt.Sprintf("`%s` INT DEFAULT 0", colName))
+                    break
+                }
                 for _, wordCol := range raceMaskColumns(colName) {
                     columns = append(columns, fmt.Sprintf("`%s` BIGINT UNSIGNED NOT NULL DEFAULT 0", wordCol))
                 }
@@ -262,6 +267,9 @@ func insertRecords(db *sql.DB, tableName string, dbc *DBCFile, meta *MetaFile) e
         return nil
     }
 
+    truncatedMasks := 0
+    defer func() { warnTruncated(tableName, truncatedMasks) }()
+
     tx, err := db.Begin()
     if err != nil {
         return err
@@ -288,7 +296,7 @@ func insertRecords(db *sql.DB, tableName string, dbc *DBCFile, meta *MetaFile) e
                     columnsBase = append(columnsBase, fmt.Sprintf("`%s_%s`", colName, lang))
                 }
             case "racemask":
-                for _, wordCol := range raceMaskColumns(colName) {
+                for _, wordCol := range raceMaskSQLColumns(colName) {
                     columnsBase = append(columnsBase, fmt.Sprintf("`%s`", wordCol))
                 }
             }
@@ -352,7 +360,16 @@ func insertRecords(db *sql.DB, tableName string, dbc *DBCFile, meta *MetaFile) e
                             rowPlaceholders = append(rowPlaceholders, "?")
                         }
                     case "racemask":
-                        for _, word := range rec[name].(RaceMask) {
+                        mask := rec[name].(RaceMask)
+                        if raceMaskBits == 32 {
+                            if !mask.fitsLegacy() {
+                                truncatedMasks++
+                            }
+                            rowPlaceholders = append(rowPlaceholders, "?")
+                            allValues = append(allValues, mask.legacyValue())
+                            break
+                        }
+                        for _, word := range mask {
                             rowPlaceholders = append(rowPlaceholders, "?")
                             allValues = append(allValues, word)
                         }

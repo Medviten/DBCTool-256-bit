@@ -31,6 +31,7 @@ type PathConfig struct {
 type OptionConfig struct {
     UseVersioning      bool `json:"use_versioning"`         // whether or not to use DBC export versioning
     UseLowercaseTables bool `json:"use_lowercase_tables"`   // whether or not to use lowercase database table names
+    RaceMaskBits       int  `json:"race_mask_bits,omitempty"` // 256 (default) or 32: race mask layout of exported DBCs and imported tables
 }
 
 // Config is the root config.json structure
@@ -54,6 +55,7 @@ func loadOrInitConfig(path string) (*Config, bool, error) {
             Options: OptionConfig{
                 UseVersioning: false,
                 UseLowercaseTables: false,
+                RaceMaskBits: 256,
             },
         }
 

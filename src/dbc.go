@@ -328,6 +328,10 @@ func WriteDBC(dbc *DBCFile, meta *MetaFile, outPath string) error {
     }
     defer outFile.Close()
 
+    // the layout written follows the meta (and race_mask_bits), not the header of the file the records came from
+    dbc.Header.FieldCount = calculateFieldCount(*meta)
+    dbc.Header.RecordSize = calculateRecordSize(*meta)
+
     // Write header
     headerBuf := make([]byte, 20)
     copy(headerBuf[0:4], dbc.Header.Magic[:])
@@ -381,8 +385,8 @@ func WriteDBC(dbc *DBCFile, meta *MetaFile, outPath string) error {
                         offset += 4
                     }
                 case "racemask":
-                    putRaceMask(recordData[offset:offset+raceMaskDBCSize], rec[name].(RaceMask))
-                    offset += raceMaskDBCSize
+                    putRaceMaskOut(recordData[offset:offset+raceMaskOutSize()], rec[name].(RaceMask))
+                    offset += raceMaskOutSize()
                 }
             }
         }

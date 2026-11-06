@@ -62,6 +62,11 @@ func ExportDBC(db *sql.DB, cfg *Config, metaPath string) error {
         return fmt.Errorf("failed to calculate checksum for %s: %w", tableName, err)
     }
 
+    // the same table exports differently per race_mask_bits, so switching it counts as a change
+    if raceMaskBits == 32 && metaHasRaceMask(meta) {
+        currentCS ^= raceMask32ChecksumSalt
+    }
+
     storedCS, err := getStoredChecksum(db, tableName)
     if err != nil {
         return fmt.Errorf("failed to get stored checksum for %s: %w", tableName, err)
@@ -73,6 +78,8 @@ func ExportDBC(db *sql.DB, cfg *Config, metaPath string) error {
     }
     
     log.Printf("Exporting table %s to DBC...\n", tableName)
+
+    truncatedMasks := 0
     
     orderClause := buildOrderBy(meta.SortOrder)
     
@@ -139,9 +146,13 @@ func ExportDBC(db *sql.DB, cfg *Config, metaPath string) error {
                     loc[16] = toUint32(raw, cols, fmt.Sprintf("%s_flags", name))
                     rec[name] = loc
                 case "racemask":
+                    // reads either schema: missing _2.._4 columns read as 0, a signed INT keeps its 32-bit pattern
                     var mask RaceMask
                     for w, wordCol := range raceMaskColumns(name) {
                         mask[w] = toUint64(raw, cols, wordCol)
+                    }
+                    if raceMaskBits == 32 && !mask.fitsLegacy() {
+                        truncatedMasks++
                     }
                     rec[name] = mask
                 }
@@ -168,6 +179,7 @@ func ExportDBC(db *sql.DB, cfg *Config, metaPath string) error {
         return fmt.Errorf("failed to update checksum for %s: %w", tableName, err)
     }
 
+    warnTruncated(tableName, truncatedMasks)
     log.Printf("Exported %s\n", meta.File)
     return nil
 }
@@ -217,7 +229,7 @@ func calculateRecordSize(meta MetaFile) uint32 {
             case "Loc":
                 size += 4 * 17
             case "racemask":
-                size += raceMaskDBCSize
+                size += raceMaskOutSize()
             }
         }
     }
@@ -237,7 +249,7 @@ func calculateFieldCount(meta MetaFile) uint32 {
             case "Loc":
                 count += 17
             case "racemask":
-                count += raceMaskDBCFields
+                count += raceMaskOutFields()
             default:
                 count++
             }

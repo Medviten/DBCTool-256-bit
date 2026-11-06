@@ -11,6 +11,7 @@ import (
     "log"
     "os"
     "path/filepath"
+    "strconv"
     "strings"
 )
 
@@ -24,6 +25,8 @@ func main() {
     // Extract global config flag from os.Args (support: --config=path, --config path, -config, -config=)
     // Default:
     globalConfigPath := "./config.json"
+    // --race-mask-bits overrides options.race_mask_bits
+    raceMaskBitsFlag := ""
 
     // We'll build a new slice of args to pass to subcommand flags (argsWithoutGlobal).
     argsWithoutGlobal := []string{os.Args[0]}
@@ -50,6 +53,21 @@ func main() {
                 continue
             }
         }
+        // --race-mask-bits 32|256 / --race-mask-bits=32|256
+        if a == "--race-mask-bits" || a == "-race-mask-bits" {
+            if i+1 < len(os.Args) {
+                raceMaskBitsFlag = os.Args[i+1]
+                i += 2
+                continue
+            }
+            fmt.Println("Error: --race-mask-bits requires a value")
+            return
+        }
+        if strings.HasPrefix(a, "--race-mask-bits=") || strings.HasPrefix(a, "-race-mask-bits=") {
+            raceMaskBitsFlag = strings.SplitN(a, "=", 2)[1]
+            i++
+            continue
+        }
         // not a global flag, keep for subcommands
         argsWithoutGlobal = append(argsWithoutGlobal, a)
         i++
@@ -74,6 +92,21 @@ func main() {
     if created {
         fmt.Printf("Config template created at %s. Please edit it and re-run.\n", globalConfigPath)
         return
+    }
+
+    if err := setRaceMaskBits(cfg.Options.RaceMaskBits); err != nil {
+        log.Fatalf("Invalid options.race_mask_bits: %v", err)
+    }
+    if raceMaskBitsFlag != "" {
+        bits, err := strconv.Atoi(raceMaskBitsFlag)
+        if err == nil && bits != 0 {
+            err = setRaceMaskBits(bits)
+        } else if err == nil {
+            err = fmt.Errorf("must be 32 or 256")
+        }
+        if err != nil {
+            log.Fatalf("Invalid --race-mask-bits %q: %v", raceMaskBitsFlag, err)
+        }
     }
 
     switch cmd {

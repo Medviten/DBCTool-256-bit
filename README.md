@@ -55,7 +55,8 @@ When run for the first time, `DBCTool` will generate a template
     "meta": "../meta"
   }
   "options": {
-    "use_versioning": false
+    "use_versioning": false,
+    "race_mask_bits": 256
   }
 }
 ```
@@ -68,6 +69,9 @@ When run for the first time, `DBCTool` will generate a template
 -   **options.use_versioning**: determines whether or not export uses
     the built in versioning checksum. If enabled, only tables determined to
     have data changes will be exported. Otherwise all DBCs will be exported.
+-   **options.race_mask_bits**: `256` (default) or `32`, the race mask
+    layout `export` writes and `import` creates tables with. See
+    [Race masks](#race-masks).
 
 ------------------------------------------------------------------------
 
@@ -138,6 +142,8 @@ dbctool <command> [options]
 
 -   `--config=path/to/config.json` : override path to config file.\
     Can be placed before or after the subcommand.
+-   `--race-mask-bits=32|256` : override `options.race_mask_bits`.\
+    Can be placed before or after the subcommand.
 
 ------------------------------------------------------------------------
 
@@ -162,7 +168,7 @@ Example:
 }
 ```
 
-### 256-bit race masks
+### Race masks
 
 The `racemask` type holds a 256-bit race mask (bit `race - 1` per race,
 races 1-255). It is used by `Faction.dbc` (`reputation_race_mask`, count 4),
@@ -172,8 +178,8 @@ uses the same type, but its bits are indexed by race ID itself (bit `race`, not
 `race - 1`), as in the stock file.
 
 -   **DBC**: 32 bytes per mask, 8 little-endian `uint32` fields, races 1-32
-    first. `export` always writes this layout. `import` also accepts stock
-    3.3.5 DBCs, where the mask is a single `uint32`, and widens them.
+    first. `import` and `read` accept this and the stock 3.3.5 layout, where
+    the mask is a single `uint32`, whatever `race_mask_bits` is.
 -   **SQL**: four `BIGINT UNSIGNED` columns. The field's own name holds
     races 1-64, followed by `<name>_2` (65-128), `<name>_3` (129-192) and
     `<name>_4` (193-256). With `count`, each element gets its own four, e.g.
@@ -183,6 +189,15 @@ Because each column is a plain integer, SQL bitwise math keeps working for
 races 1-64, e.g. ``SET `race_mask` = `race_mask` | (1 << (@Race - 1))``.
 For a race above 64, update the word that holds it, e.g. race 70 is bit
 `(70 - 1) % 64` of `race_mask_2`.
+
+With `race_mask_bits` = `32`, both sides use the stock layout instead: `export`
+writes one `uint32` per mask and `import` creates one signed `INT` column, so
+the tables and DBCs are those of the original DBCTool (and a 32-bit server
+and client). Races above 32 cannot be stored that way: a 256-bit DBC imported
+or a wide table exported in this mode keeps races 1-32 and drops the rest, with
+a warning naming the table and the number of masks affected. `export` reads
+either schema in either mode, and the versioning checksum includes the mode, so
+switching it re-exports the race mask DBCs.
 
 ------------------------------------------------------------------------
 
