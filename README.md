@@ -26,8 +26,8 @@ using flexible JSON meta definitions.
 Clone the repository and build with Go:
 
 ``` bash
-git clone https://github.com/foereaper/dbctool.git --recurse
-cd dbctool
+git clone https://github.com/Medviten/DBCTool-256-bit.git --recurse
+cd DBCTool-256-bit
 go build -C src -o dbctool
 ```
 
